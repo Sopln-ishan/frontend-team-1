@@ -1,6 +1,9 @@
 const Navbar = () => {
     return (
-        <button>Navbar</button>
+        <>
+            <button>Navbar</button>
+        </>
+        
     );
 }
  
