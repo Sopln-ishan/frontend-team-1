@@ -1,5 +1,7 @@
 const Header = () => {
-    return ();
+    return (
+        <button>Header</button>
+    );
 }
  
 export default Header;
