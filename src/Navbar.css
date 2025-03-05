@@ -8,6 +8,10 @@
     background-color: #191310;
     color: #f9f5f1;
     height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 .Navbar .logo {
