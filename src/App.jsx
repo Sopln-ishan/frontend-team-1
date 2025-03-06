@@ -1,8 +1,9 @@
 import './Navbar.css';
+import './Home.css';
+import './About-Us.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Header.jsx';
+import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
-import Footer from './Footer.jsx';
 import AboutUs from './About-Us.jsx';
 import ContactUs from './Contact-Us.jsx';
 import OurServices from './Our-Services.jsx';
@@ -13,28 +14,32 @@ function App() {
   return (
     <>
       <Router>
-        <div className="Navbar">
-          <Navbar />
-            <Switch>
-              <Route exact path="/">
-                <AboutUs />
-              </Route>
+            <div className="Navbar">
+            <Navbar />
+                <Switch>
+                  <Route exact path="/">
+                    <Home />
+                  </Route>
 
-              <Route path="/Why-Us.jsx">
-                <WhyUs />
-              </Route>
+                  <Route path="/About-Us.jsx">
+                      <AboutUs />
+                  </Route>
 
-              <Route path="/Our-Services.jsx">
-                <OurServices />
-              </Route>
+                  <Route path="/Why-Us.jsx">
+                      <WhyUs />
+                  </Route>
 
-              <Route path="/Contact-Us.jsx">
-                <ContactUs />
-              </Route>
-              
-            </Switch>
-        </div>
-      </Router>
+                  <Route path="/Our-Services.jsx">
+                      <OurServices />
+                  </Route>
+
+                  <Route path="/Contact-Us.jsx">
+                      <ContactUs />
+                  </Route>
+                </Switch>
+            </div>
+        </Router>
+
     </>
   )
 }

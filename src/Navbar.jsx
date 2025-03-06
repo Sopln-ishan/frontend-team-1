@@ -9,19 +9,19 @@ const Navbar = () => {
                         Home
                     </Link>
 
-                    <Link to="/">
+                    <Link to="/About-Us.jsx">
                         About Us 
                     </Link>
 
-                    <Link to="/">
+                    <Link to="/Why-Us.jsx">
                         Why Us 
                     </Link>
 
-                    <Link to="/">
+                    <Link to="/Our-Services.jsx">
                         Our Services 
                     </Link>
 
-                    <Link to="/">
+                    <Link to="/Contact-Us.jsx">
                         Contact Us 
                     </Link>
                 </div>

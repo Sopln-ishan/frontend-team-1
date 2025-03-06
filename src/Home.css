@@ -1,0 +1,28 @@
+body {
+    overflow-y: scroll;
+}
+
+.company-name-section {
+    height: 700px;
+    width: 100%;
+}
+
+.company-name-bkg-img {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/hero-section-bkg-img.jpg);
+    background-size: cover;
+}
+
+.company-name-bkg-img h1 {
+    font-size: 60px;
+    color: #f9f5f1;
+    padding: 40px 80px;
+}
+
+.company-name-bkg-img p {
+    font-size: 24px;
+    text-align: right;
+    margin: 110px 20px;
+    padding: 110px 20px;
+}
