@@ -1,0 +1,149 @@
+.contactus
+{
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/*background image*/
+.background-container 
+{
+  top: 0;
+  width: 100%;
+  position: relative; 
+  text-align: center;
+  color: white;
+  height: 50vh;
+  background-image: url('https://globalmaps.org/wp-content/uploads/2023/10/World-Map-white-2048x1171.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-overlay 
+{
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    /* .contactus {
+      padding-top: 50px;
+    } */
+    
+    .background-container {
+      padding: 30px 0;
+    }
+    
+    .text-overlay {
+      padding: 15px;
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contactus {
+      padding-top: 40px;
+    }
+    
+    .background-container {
+      padding: 20px 0;
+    }
+    
+    .text-overlay {
+      padding: 10px;
+      width: 100%;
+    }
+  }
+        /* Card styling */
+        .address {
+            font-family: 'Arial', sans-serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .address h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        
+        .country-cards {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .country-cards:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .country-cards h4 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e7e7e7;
+        }
+        
+        .country-cards img {
+            display: block;
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .country-cards p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .country-cards h5 {
+            color: #7f8c8d;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: italic;
+            margin-top: 0;
+        }
+        
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .country-cards {
+                padding: 20px;
+            }
+            
+            .address h2 {
+                font-size: 28px;
+            }
+            
+            .country-cards h4 {
+                font-size: 22px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .address h2 {
+                font-size: 24px;
+            }
+            
+            .country-cards {
+                padding: 15px;
+            }
+            
+            .country-cards h4 {
+                font-size: 20px;
+            }
+        }
