@@ -15,29 +15,29 @@ function App() {
     <>
       <Router>
             <div className="Navbar">
-            <Navbar />
-                <Switch>
-                  <Route exact path="/">
-                    <Home />
-                  </Route>
-
-                  <Route path="/About-Us.jsx">
-                      <AboutUs />
-                  </Route>
-
-                  <Route path="/Why-Us.jsx">
-                      <WhyUs />
-                  </Route>
-
-                  <Route path="/Our-Services.jsx">
-                      <OurServices />
-                  </Route>
-
-                  <Route path="/Contact-Us.jsx">
-                      <ContactUs />
-                  </Route>
-                </Switch>
+              <Navbar />
             </div>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+
+              <Route path="/About-Us.jsx">
+                  <AboutUs />
+              </Route>
+
+              <Route path="/Why-Us.jsx">
+                  <WhyUs />
+              </Route>
+
+              <Route path="/Our-Services.jsx">
+                  <OurServices />
+              </Route>
+
+              <Route path="/Contact-Us.jsx">
+                  <ContactUs />
+              </Route>
+            </Switch>
         </Router>
 
     </>

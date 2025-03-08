@@ -1,4 +1,19 @@
 const AboutUs = () => {
+    const histories = [{
+        img: "../images/gray-screen-img.png",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis dolores iusto ipsa, tempore deleniti consectetur, rem voluptatibus distinctio adipisci, minus minima modi nobis error. Laboriosam non soluta mollitia quam.",
+        floatImage: "left",
+        alignText: "left",
+        id: 1,
+    },
+    {
+        img: "../images/gray-screen-img.png",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis dolores iusto ipsa, tempore deleniti consectetur, rem voluptatibus distinctio adipisci, minus minima modi nobis error. Laboriosam non soluta mollitia quam.",
+        floatImage: "right",
+        alignText: "right",
+        id: 2
+    }];
+
     return ( 
         <>
             <div className="about-us">
@@ -17,6 +32,17 @@ const AboutUs = () => {
                         <h2>Our Vision</h2>
                         <p>Your vision goes here</p>
                     </div>
+                </div>
+
+                <div className="history-section">
+                    <h1>Our Glorius Past</h1>
+                    
+                    { histories.map((history) => (
+                        <div key={ history.id }>
+                            <img src={ history.img } className="history-image" style={{ float: history.floatImage }}/>
+                            <span className="history-image-text" style={{ textAlign: history.alignText}}>{ history.text }</span>
+                        </div>
+                    )) }
                 </div>
             </div>
         </> 

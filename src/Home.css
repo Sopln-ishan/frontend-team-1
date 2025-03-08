@@ -1,5 +1,5 @@
-body {
-    overflow-y: scroll;
+.hero-section {
+    margin-top: 100px;
 }
 
 .company-name-section {
@@ -12,6 +12,7 @@ body {
     width: 100%;
     background-image: url(../images/hero-section-bkg-img.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .company-name-bkg-img h1 {
