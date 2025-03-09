@@ -1,7 +1,9 @@
+.contact-us-page {
+  margin-top: 100px;
+}
+
 .contactus
 {
-  top: 0;
-  position: absolute;
   width: 100%;
 }
 
@@ -9,21 +11,20 @@
 .background-container 
 {
   top: 0;
-  width: 100%;
-  position: relative; 
+  width: 100%; 
   text-align: center;
   color: white;
-  height: 50vh;
+  height: 70vh;
   background-image: url('https://globalmaps.org/wp-content/uploads/2023/10/World-Map-white-2048x1171.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .text-overlay 
 {
-  position: relative;
   padding: 20px;
   border-radius: 10px;
 }

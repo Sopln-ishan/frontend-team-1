@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
 import AboutUs from './About-Us.jsx';
-import ContactUs from './Contact-Us.jsx';
+import ContactUs from './Contact.jsx';
 import OurServices from './Our-Services.jsx';
 import WhyUs from './Why-Us.jsx';
 
@@ -34,7 +34,7 @@ function App() {
                   <OurServices />
               </Route>
 
-              <Route path="/Contact-Us.jsx">
+              <Route path="/Contact.jsx">
                   <ContactUs />
               </Route>
             </Switch>

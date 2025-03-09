@@ -20,7 +20,7 @@ const Navbar = () => {
                     Our Services 
                 </Link>
 
-                <Link to="/Contact-Us.jsx">
+                <Link to="/Contact.jsx">
                     Contact Us 
                 </Link>
             </div>
