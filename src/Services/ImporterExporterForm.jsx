@@ -1,10 +1,17 @@
 import { useState } from "react";
 
-const ImporterExporterForm = () => {
+export default function ImporterExporterForm() {
   const [formData, setFormData] = useState({
     companyName: "",
-    licenseNumber: "",
-    destinationCountry: ""
+    contactPerson: "",
+    email: "",
+    phone: "",
+    countryOfImport: "",
+    countryOfExport: "",
+    hsCode: "",
+    goodsDescription: "",
+    complianceDocuments: "",
+    additionalInfo: ""
   });
 
   const handleChange = (e) => {
@@ -13,24 +20,25 @@ const ImporterExporterForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
+    alert("Form submitted successfully!");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Importer on Records / Exporter on Records</h3>
-      <label>Company Name:</label>
-      <input type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
-
-      <label>Trade License Number:</label>
-      <input type="text" name="licenseNumber" value={formData.licenseNumber} onChange={handleChange} />
-
-      <label>Destination Country:</label>
-      <input type="text" name="destinationCountry" value={formData.destinationCountry} onChange={handleChange} />
-
-      <button type="submit">Submit</button>
-    </form>
+    <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+      <h2 className="text-center text-xl font-bold text-gray-700 mb-4">Importer/Exporter on Records</h2>
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+        <input type="text" name="companyName" placeholder="Company Name" value={formData.companyName} onChange={handleChange} required className="input-field" />
+        <input type="text" name="contactPerson" placeholder="Contact Person" value={formData.contactPerson} onChange={handleChange} required className="input-field" />
+        <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="input-field" />
+        <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required className="input-field" />
+        <input type="text" name="countryOfImport" placeholder="Country of Import" value={formData.countryOfImport} onChange={handleChange} required className="input-field" />
+        <input type="text" name="countryOfExport" placeholder="Country of Export" value={formData.countryOfExport} onChange={handleChange} required className="input-field" />
+        <input type="text" name="hsCode" placeholder="HS Code (if applicable)" value={formData.hsCode} onChange={handleChange} className="input-field" />
+        <textarea name="goodsDescription" placeholder="Description of Goods" value={formData.goodsDescription} onChange={handleChange} required className="textarea-field"></textarea>
+        <input type="file" name="complianceDocuments" onChange={handleChange} className="input-field" />
+        <textarea name="additionalInfo" placeholder="Additional Instructions" value={formData.additionalInfo} onChange={handleChange} className="textarea-field"></textarea>
+        <button type="submit" className="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Submit Request</button>
+      </form>
+    </div>
   );
-};
-
-export default ImporterExporterForm;
+}

@@ -1,7 +1,18 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const BorderClearancesForm = () => {
-  const [formData, setFormData] = useState({ country: "", clearanceType: "", referenceNumber: "" });
+export default function BorderClearanceForm() {
+  const [formData, setFormData] = useState({
+    companyName: "",
+    contactPerson: "",
+    email: "",
+    phone: "",
+    shipmentDetails: "",
+    borderCrossingPoint: "",
+    customsBroker: "",
+    requiredDocuments: "",
+    inspectionRequirements: "",
+    additionalInfo: ""
+  });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -9,24 +20,25 @@ const BorderClearancesForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Border Clearances Form Data:", formData);
+    alert("Form submitted successfully!");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Border Clearances</h3>
-      <label>Country:</label>
-      <input type="text" name="country" value={formData.country} onChange={handleChange} />
-
-      <label>Clearance Type:</label>
-      <input type="text" name="clearanceType" value={formData.clearanceType} onChange={handleChange} />
-
-      <label>Reference Number:</label>
-      <input type="text" name="referenceNumber" value={formData.referenceNumber} onChange={handleChange} />
-
-      <button type="submit">Submit</button>
-    </form>
+    <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+      <h2 className="text-center text-xl font-semibold text-gray-800 mb-4">Border Clearance Service</h2>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <input type="text" name="companyName" placeholder="Company Name" value={formData.companyName} onChange={handleChange} required className="w-full p-2 border rounded" />
+        <input type="text" name="contactPerson" placeholder="Contact Person" value={formData.contactPerson} onChange={handleChange} required className="w-full p-2 border rounded" />
+        <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="w-full p-2 border rounded" />
+        <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required className="w-full p-2 border rounded" />
+        <textarea name="shipmentDetails" placeholder="Shipment Details" value={formData.shipmentDetails} onChange={handleChange} required className="w-full p-2 border rounded"></textarea>
+        <input type="text" name="borderCrossingPoint" placeholder="Border Crossing Point" value={formData.borderCrossingPoint} onChange={handleChange} required className="w-full p-2 border rounded" />
+        <input type="text" name="customsBroker" placeholder="Customs Broker (if any)" value={formData.customsBroker} onChange={handleChange} className="w-full p-2 border rounded" />
+        <input type="text" name="requiredDocuments" placeholder="Required Documents" value={formData.requiredDocuments} onChange={handleChange} required className="w-full p-2 border rounded" />
+        <textarea name="inspectionRequirements" placeholder="Inspection Requirements" value={formData.inspectionRequirements} onChange={handleChange} className="w-full p-2 border rounded"></textarea>
+        <textarea name="additionalInfo" placeholder="Additional Instructions" value={formData.additionalInfo} onChange={handleChange} className="w-full p-2 border rounded"></textarea>
+        <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Submit Request</button>
+      </form>
+    </div>
   );
-};
-
-export default BorderClearancesForm;
+}

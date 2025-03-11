@@ -9,8 +9,8 @@ import ContactUs from './Contact.jsx';
 import OurServices from './Our-Services.jsx';
 import WhyUs from './Why-Us.jsx';
 
-function App() {
 
+function App() {
   return (
     <>
       <Router>
