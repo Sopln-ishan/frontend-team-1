@@ -11,13 +11,12 @@ import Footer from './Footer.jsx';
 import OurServices from './Our-Services.jsx';
 import WhyUs from './Why-Us.jsx';
 
-<<<<<<< HEAD
-=======
+
 function App() {
   useEffect(() => {
     document.body.style.backgroundColor = "#F4EAE2"; // Change to desired color
   }, []);
->>>>>>> 163c1e6db60a6af58c27dbaecc51a90be32a092a
+  
 
 function App() {
   return (
@@ -50,7 +49,7 @@ function App() {
         </Router>
         <Footer/>
     </>
-  )
+  );
 }
-
-export default App
+}
+export default App;
