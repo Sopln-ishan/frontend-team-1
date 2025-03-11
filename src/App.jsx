@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './Navbar.css';
 import './Home.css';
 import './About-Us.css';
@@ -6,9 +7,17 @@ import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
 import AboutUs from './About-Us.jsx';
 import ContactUs from './Contact.jsx';
+import Footer from './Footer.jsx';
 import OurServices from './Our-Services.jsx';
 import WhyUs from './Why-Us.jsx';
 
+<<<<<<< HEAD
+=======
+function App() {
+  useEffect(() => {
+    document.body.style.backgroundColor = "#F4EAE2"; // Change to desired color
+  }, []);
+>>>>>>> 163c1e6db60a6af58c27dbaecc51a90be32a092a
 
 function App() {
   return (
@@ -39,7 +48,7 @@ function App() {
               </Route>
             </Switch>
         </Router>
-
+        <Footer/>
     </>
   )
 }

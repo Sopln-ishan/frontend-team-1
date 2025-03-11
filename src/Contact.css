@@ -28,184 +28,124 @@
   padding: 20px;
   border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
-    /* .contactus {
-      padding-top: 50px;
-    } */
-    
-    .background-container {
-      padding: 30px 0;
-    }
-    
-    .text-overlay {
-      padding: 15px;
-      width: 95%;
-    }
+  /* Card styling */
+  /* Country cards section */
+
+.addr h1 {
+  margin-top: 40px;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.country-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.country-name {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e7e7e7;
+  text-align: center;
+}
+
+.country-image {
+  display: block;
+  width: 80%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0 auto 15px auto;
+}
+
+.country-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+  .form-container {
+    width: 50%;
+    margin: 100px auto 0px auto;
+    padding: 20px 20%;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: rgba(239, 239, 239, 0.804);
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
   
-  @media screen and (max-width: 480px) {
-    .contactus {
-      padding-top: 40px;
-    }
-    
-    .background-container {
-      padding: 20px 0;
-    }
-    
-    .text-overlay {
-      padding: 10px;
-      width: 100%;
-    }
+  h2 {
+    margin-bottom: 15px;
   }
-        /* Card styling */
-        .address {
-            font-family: 'Arial', sans-serif;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-        
-        .addr h1{
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
-            font-size: 32px;
-            font-weight: 600;
-        }
-        
-        .country-cards {
-            background-color: #00000020;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 25px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        
-        .country-cards:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-        .country-cards::after
-        
-        
-        .country-cards h4 {
-            color: #2c3e50;
-            font-size: 24px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e7e7e7;
-        }
-        
-        .country-cards img {
-            display: block;
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-        
-        .country-cards p {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            .country-cards {
-                padding: 20px;
-            }
-            
-            .address h2 {
-                font-size: 28px;
-            }
-            
-            .country-cards h4 {
-                font-size: 22px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .address h2 {
-                font-size: 24px;
-            }
-            
-            .country-cards {
-                padding: 15px;
-            }
-            
-            .country-cards h4 {
-                font-size: 20px;
-            }
-        }
-        .form-container {
-          width: 100%;
-          max-width: 400px;
-          margin: auto;
-          padding: 20px 70vh;
-          background: #f9f9f9;
-          border-radius: 8px;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-          text-align: center;
-          background: rgba(239, 239, 239, 0.804);
-          margin-bottom: 10vh;
-        }
-        
-        h2 {
-          margin-bottom: 15px;
-        }
-        
-        label {
-          display: block;
-          margin: 10px 0 5px;
-          font-weight: bold;
-        }
-        
-        input, textarea, select {
-          width: 100%;
-          padding: 8px;
-          margin-bottom: 10px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-        }
-        
-        .mobile-input {
-          display: flex;
-          gap: 10px;
-        }
-        
-        .mobile-input select {
-          width: 30%;
-        }
-        
-        textarea {
-          resize: vertical;
-          height: 80px;
-        }
-        
-        button {
-          background: #007bff;
-          color: white;
-          padding: 10px;
-          border: none;
-          cursor: pointer;
-          border-radius: 4px;
-        }
-        
-        button:hover {
-          background: #0056b3;
-        }
-        
-        .success-message {
-          color: green;
-          font-size: 18px;
-          font-weight: bold;
-        }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .mobile-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .mobile-input select {
+    width: 30%;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+  }
         
