@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
 
-function App() {
-  useEffect(() => {
-    document.body.style.backgroundColor = "#AB5536"; // Change to desired color
-  }, []);
-}
 const CountryCard = ({ country }) => {
   return (
     <div 
