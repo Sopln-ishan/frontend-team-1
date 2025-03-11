@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-const Navbar = () => {
+const Navbar = () => {   
     return (
         <>
             <h1 className='logo'>Logo</h1>
