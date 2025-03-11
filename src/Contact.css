@@ -13,7 +13,7 @@
   top: 0;
   width: 100%; 
   text-align: center;
-  color: black;
+  color: #191310;
   height: 70vh;
   background-image: url('https://globalmaps.org/wp-content/uploads/2023/10/World-Map-white-2048x1171.png');
   background-size: cover;
@@ -33,34 +33,39 @@
 
 .addr h1 {
   margin-top: 40px;
+  font-size: 7vh;
+  color: #191310;
+  text-align: center;
 }
 
 .country-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 70px; */
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 8vh 20vh;
   padding: 0 20px;
+  row-gap: 10vh;
+  column-gap: 10vh;
 }
 
 .country-card {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transition: transform 0.1s ease, box-shadow 0.1s ease; */
   text-align: center;
   position: relative;
   overflow: hidden;
+  transition: background-color 0.1s ease-in-out, transform 0.1s;
 }
 
 .country-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 .country-name {
-  color: #2c3e50;
+  color: #ffffff;
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 20px;
@@ -88,12 +93,13 @@
   .form-container {
     width: 50%;
     margin: 100px auto 0px auto;
-    padding: 20px 20%;
-    background: #f9f9f9;
+    padding: 20px 10%;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 40px #F57A00; */
+  box-shadow: 20px 20px 20px #4747478c;
+
     text-align: center;
-    background: rgba(239, 239, 239, 0.804);
+    background: #FFE0C2;
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
@@ -122,7 +128,7 @@
   }
   
   .mobile-input select {
-    width: 30%;
+    width: 50%;
   }
   
   textarea {
@@ -137,6 +143,7 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    transition: 0.3s;
   }
   
   button:hover {

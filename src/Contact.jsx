@@ -33,63 +33,63 @@ const Contact = () => {
   const countryList = [
     {
       name: "UAE",
-      image1: "https://www.robinage.com/wp-content/uploads/2022/04/Taj-Mahal.jpg",
-      image2: "https://www.robinage.com/wp-content/uploads/2022/04/Taj-Mahal.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      image1: "https://images.trvl-media.com/lodging/3000000/2240000/2235400/2235336/88658e84.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+      image2: "https://images.trvl-media.com/lodging/3000000/2240000/2235400/2235336/88658e84.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      name: "KSA",
-      image1: "https://media.architecturaldigest.com/photos/6559735fb796d428bef00d25/1:1/w_3712,h_3712,c_limit/GettyImages-1731443210.jpg",
-      image2: "https://media.architecturaldigest.com/photos/6559735fb796d428bef00d25/1:1/w_3712,h_3712,c_limit/GettyImages-1731443210.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      name: "Saudi Arabia",
+      image1: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/85/f3/b7.jpg",
+      image2: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/85/f3/b7.jpg",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "OMAN",
-      image1: "canada1.jpg",
-      image2: "canada2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      image1: "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_80147977_20191202163915.jpg",
+      image2: "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_80147977_20191202163915.jpg",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "BAHRAIN",
-      image1: "australia1.jpg",
-      image2: "australia2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      image1: "https://live.staticflickr.com/4100/4884934423_125d9bca35_b.jpg",
+      image2: "https://m.media-amazon.com/images/I/61ywLsK+idL._AC_UF1000,1000_QL80_.jpg",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "KUWAIT",
-      image1: "germany1.jpg",
-      image2: "germany2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      image1: "https://i0.wp.com/nenow.in/wp-content/uploads/2024/12/kuwait-1.jpeg?resize=780%2C585&quality=89&ssl=1",
+      image2: "https://i0.wp.com/nenow.in/wp-content/uploads/2024/12/kuwait-1.jpeg?resize=780%2C585&quality=89&ssl=1",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "QATAR",
-      image1: "japan1.jpg",
-      image2: "japan2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      image2: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ed/64/28/lusail-promenade.jpg?w=500&h=500&s=1",
+      image1: "https://llqlifestyle.com/wp-content/uploads/2022/05/15a496b0-6c7d-4bd4-a2ad-ae269fe21c95-1024x756.jpg",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "JORDAN",
       image1: "japan1.jpg",
       image2: "japan2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "IRAQ",
       image1: "japan1.jpg",
       image2: "japan2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "SYRIA",
       image1: "japan1.jpg",
       image2: "japan2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "LEBANON",
       image1: "japan1.jpg",
       image2: "japan2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "EGYPT",
