@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import './Navbar.css';
 import './Home.css';
 import './About-Us.css';
@@ -10,6 +11,9 @@ import OurServices from './Our-Services.jsx';
 import WhyUs from './Why-Us.jsx';
 
 function App() {
+  useEffect(() => {
+    document.body.style.backgroundColor = "#F4EAE2"; // Change to desired color
+  }, []);
 
   return (
     <>
