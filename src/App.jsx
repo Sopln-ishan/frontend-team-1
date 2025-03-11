@@ -7,6 +7,7 @@ import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
 import AboutUs from './About-Us.jsx';
 import ContactUs from './Contact.jsx';
+import Footer from './Footer.jsx';
 import OurServices from './Our-Services.jsx';
 import WhyUs from './Why-Us.jsx';
 
@@ -43,7 +44,7 @@ function App() {
               </Route>
             </Switch>
         </Router>
-
+        <Footer/>
     </>
   )
 }
