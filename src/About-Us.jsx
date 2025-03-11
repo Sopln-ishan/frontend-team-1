@@ -33,17 +33,6 @@ const AboutUs = () => {
                         <p>Your vision goes here</p>
                     </div>
                 </div>
-
-                <div className="history-section">
-                    <h1>Our Glorius Past</h1>
-                    
-                    { histories.map((history) => (
-                        <div key={ history.id }>
-                            <img src={ history.img } className="history-image" style={{ float: history.floatImage }}/>
-                            <span className="history-image-text" style={{ textAlign: history.alignText}}>{ history.text }</span>
-                        </div>
-                    )) }
-                </div>
             </div>
         </> 
     );
