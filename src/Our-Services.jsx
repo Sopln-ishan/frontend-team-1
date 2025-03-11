@@ -1,44 +1,61 @@
-import { useState } from "react";
-import BondedMovementsForm from "./Services/BondedMovementsForm";
-import BorderClearancesForm from "./Services/BorderClearancesForm";
-import ImporterExporterForm from "./Services/ImporterExporterForm";
-import IntegratedTruckingForm from "./Services/IntegratedTruckingForm";
-import ProjectCargoForm from "./Services/ProjectCargoForm";
-import ShippingDocumentsForm from "./Services/ShippingDocumentsForm";
+import './Our-Services.css';
+import { Link } from 'react-router-dom';
 
 const OurServices = () => {
-  const [selectedService, setSelectedService] = useState("Integrated Trucking");
-
-  const renderForm = () => {
-    switch (selectedService) {
-      case "Integrated Trucking":
-        return <IntegratedTruckingForm />;
-      case "Importer/Exporter":
-        return <ImporterExporterForm />;
-      case "Bonded Movements":
-        return <BondedMovementsForm />;
-      case "Shipping Documents":
-        return <ShippingDocumentsForm />;
-      case "Border Clearances":
-        return <BorderClearancesForm />;
-      case "Project Cargo":
-        return <ProjectCargoForm />;
-      default:
-        return <IntegratedTruckingForm />;
+  const linkCards = [
+    {
+      title: 'Bonded Movements Form',
+      link: '/Services/BondedMovementsForm.jsx',
+      icon: 'icon.jpg',
+      id: 1
+    },
+    {
+      title: 'Border Clearances Form',
+      link: '/Services/BorderClearancesForm.jsx',
+      icon: 'icon.jpg',
+      id: 2
+    },
+    {
+      title: 'Importer Exporter Form',
+      link: '/Services/ImportExporterForm.jsx',
+      icon: 'icon.jpg',
+      id: 3
+    },
+    {
+      title: 'Integrated Trucking Form',
+      link: '/Services/IntegratedTruckingForm.jsx',
+      icon: 'icon.jpg',
+      id: 4
+    },
+    {
+      title: 'Project Cargo Form',
+      link: '/Services/ProjectCargoForm.jsx',
+      icon: 'icon.jpg',
+      id: 5
+    },
+    {
+      title: 'Shipping Documents Form',
+      link: '/Services/ShippingDocumentsForm.jsx',
+      icon: 'icon.jpg',
+      id: 6
     }
-  };
-
+  ]
   return (
-    <div>
-      <h2>Our Services</h2>
-      <div>
-        {["Integrated Trucking", "Importer/Exporter", "Bonded Movements", "Shipping Documents", "Border Clearances", "Project Cargo"].map((service) => (
-          <button key={service} onClick={() => setSelectedService(service)}>
-            {service}
-          </button>
-        ))}
+    <div className='our-services-section'>
+      <div className='our-services-bkg-img'>
+        <h2>Our Services</h2>
       </div>
-      <div>{renderForm()}</div>
+
+      <div className='our-services-card-container'>
+        {linkCards.map((linkCard) => (
+          <Link to={ linkCard.src } className='link-card' key={ linkCard.id }>
+            <img src={ linkCard.icon } />
+            <p>{ linkCard.title }</p>
+          </Link>
+          ))
+        }
+        
+      </div>
     </div>
   );
 };
