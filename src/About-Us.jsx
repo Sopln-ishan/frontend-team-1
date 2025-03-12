@@ -1,3 +1,5 @@
+import StatsCounter from "./StatsCounter";
+
 const AboutUs = () => {
     const histories = [{
         img: "../images/gray-screen-img.png",
@@ -25,14 +27,18 @@ const AboutUs = () => {
                 <div className="vision-mission-section">
                     <div className="mission-section">
                         <h2>Our Mission</h2>
-                        <p>Your Mission goes here</p>
+                        <p>Our mission is to continually enhance our customer service by tailoring a broad range of services to meet your unique business needs. We are dedicated to providing innovative, cost-effective, and sustainable logistics solutions that support your ongoing success.
+                        </p>
                     </div>
 
                     <div className="vision-section">
                         <h2>Our Vision</h2>
-                        <p>Your vision goes here</p>
+                        <p>Our vision is to become the most trusted supply chain partner in the UAE and GCC by consistently delivering reliable, efficient, and innovative logistics solutions that our customers can depend on daily.</p>
                     </div>
                 </div>
+                <hr />
+                <StatsCounter />
+                <hr />
             </div>
         </> 
     );

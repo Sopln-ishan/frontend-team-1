@@ -25,16 +25,26 @@
 }
 
 .vision-mission-section {
-    height: 300px;
+    height: 200px;
     width: 100%;
     box-shadow: 0px 0px 3px #191310;
     color: #191310;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 5px;
 }
 
 .mission-section {
     text-align: left;
     padding: 40px 20px;
-    line-height: 30px;
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .mission-section h2, .vision-section h2 {
@@ -42,6 +52,13 @@
 }
 
 .vision-section {
-    text-align: right;
+    text-align: center;
     padding: 40px 20px;
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
