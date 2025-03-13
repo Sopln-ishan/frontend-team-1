@@ -240,12 +240,10 @@
   font-size: 0.9rem;
   color: #4b5563;
 }
-<<<<<<< HEAD
 .timeline-container h1{
   padding: 10px;
   margin-bottom: 8px;
 }
-=======
 
 @media screen and (max-width: 1200px) {
   .about-us-heading-and-bkg-img h1 {
@@ -310,4 +308,3 @@
       column-gap: 0px;
   }
 }
->>>>>>> 57539d4161823d95212a2f858179624e822c8a73
