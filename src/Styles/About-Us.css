@@ -181,3 +181,7 @@
   font-size: 0.9rem;
   color: #4b5563;
 }
+.timeline-container h1{
+  padding: 10px;
+  margin-bottom: 8px;
+}

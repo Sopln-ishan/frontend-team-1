@@ -131,6 +131,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className="timeline-container">
+                    <h1>Our Glorious Past..</h1>
                     {timelineData.map((item, index) => (
                      <div key={index} className="timeline-item">
                        <div className="timeline-icon">{item.icon}</div>
