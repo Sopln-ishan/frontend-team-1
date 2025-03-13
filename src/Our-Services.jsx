@@ -1,41 +1,41 @@
-import './Our-Services.css';
+import './Styles/Our-Services.css';
 import { Link } from 'react-router-dom';
 
 const OurServices = () => {
   const linkCards = [
     {
       title: 'Bonded Movements Form',
-      link: '/Services/BondedMovementsForm.jsx',
+      src: '/Services/BondedMovementsForm.jsx',
       icon: 'icon.jpg',
       id: 1
     },
     {
       title: 'Border Clearances Form',
-      link: '/Services/BorderClearancesForm.jsx',
+      src: '/Services/BorderClearancesForm.jsx',
       icon: 'icon.jpg',
       id: 2
     },
     {
       title: 'Importer Exporter Form',
-      link: '/Services/ImportExporterForm.jsx',
+      src: '/Services/ImportExporterForm.jsx',
       icon: 'icon.jpg',
       id: 3
     },
     {
       title: 'Integrated Trucking Form',
-      link: '/Services/IntegratedTruckingForm.jsx',
+      src: '/Services/IntegratedTruckingForm.jsx',
       icon: 'icon.jpg',
       id: 4
     },
     {
       title: 'Project Cargo Form',
-      link: '/Services/ProjectCargoForm.jsx',
+      src: '/Services/ProjectCargoForm.jsx',
       icon: 'icon.jpg',
       id: 5
     },
     {
       title: 'Shipping Documents Form',
-      link: '/Services/ShippingDocumentsForm.jsx',
+      src: '/Services/ShippingDocumentsForm.jsx',
       icon: 'icon.jpg',
       id: 6
     }

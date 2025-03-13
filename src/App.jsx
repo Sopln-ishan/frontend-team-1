@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './Navbar.css';
-import './Home.css';
-import './About-Us.css';
+import './Styles/Navbar.css';
+import './Styles/Home.css';
+import './Styles/About-Us.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './Navbar';
