@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import "./StatsCounter.css";
 
 const StatItem = ({ value, label, duration = 2000, suffix = "" }) => {
   const [count, setCount] = useState(0);

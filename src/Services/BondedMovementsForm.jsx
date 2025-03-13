@@ -13,19 +13,21 @@ const BondedMovementsForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Bonded Movements</h3>
-      <label>Bonded Type:</label>
-      <input type="text" name="bondedType" value={formData.bondedType} onChange={handleChange} />
+    <div className="our-services-form">
+      <form onSubmit={handleSubmit}>
+        <h3>Bonded Movements</h3>
+        <label>Bonded Type:</label>
+        <input type="text" name="bondedType" value={formData.bondedType} onChange={handleChange} />
 
-      <label>Number of Vehicles:</label>
-      <input type="number" name="numberOfVehicles" value={formData.numberOfVehicles} onChange={handleChange} />
+        <label>Number of Vehicles:</label>
+        <input type="number" name="numberOfVehicles" value={formData.numberOfVehicles} onChange={handleChange} />
 
-      <label>Security Requirements:</label>
-      <textarea name="securityRequirements" value={formData.securityRequirements} onChange={handleChange}></textarea>
+        <label>Security Requirements:</label>
+        <textarea name="securityRequirements" value={formData.securityRequirements} onChange={handleChange}></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 };
 

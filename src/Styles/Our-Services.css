@@ -6,6 +6,7 @@
     height: 30vw;
     width: 100%;
     background-color: gray;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +32,8 @@
     border-radius: 8px;
     padding: 30px 10px;
     text-decoration: none;
+    margin-bottom: 0px;
+    transition: transform 1s, box-shadow 1s;
 }
 
 .link-card img {
@@ -41,4 +44,9 @@
 .link-card p {
     padding: 10%;
     color: #191310;
+}
+
+.link-card:hover {
+    box-shadow: 2px 2px 3px #191310;
+    transform: translateY(-5px);
 }
