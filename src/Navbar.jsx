@@ -9,25 +9,35 @@ const Navbar = () => {
                 </div>
 
                 <div className='dropdown-content'>
+                <div className="navlink">
                 <Link to="/">
                     Home
                 </Link>
+                </div>
 
+                <div className="navlink">
                 <Link to="/About-Us.jsx">
                     About Us 
                 </Link>
+                </div>
 
+                <div className="navlink">
                 <Link to="/Why-Us.jsx">
                     Why Us 
                 </Link>
+                </div>
 
+                <div className="navlink">
                 <Link to="/Our-Services.jsx">
                     Our Services 
                 </Link>
+                </div>
 
+                <div className="navlink">
                 <Link to="/Contact.jsx">
                     Contact Us 
-                </Link>    
+                </Link>   
+                </div> 
                 </div>
             </div>
 

@@ -45,10 +45,61 @@
     justify-content: center;
     padding: 0px 20px;
     text-align: center;
+    position: relative;
+    transition: color 0.8s ease;
 }
 
 .Navbar a:hover {
-    color: #ffb870;
+    color: #191310;
+
+}
+
+/* Individual link hover effect */
+.Navbar .navigation-menu a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translate(-50%, -50%);
+    border: 0px solid transparent;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.Navbar .navigation-menu a:hover::after {
+    width: 80%;
+    height: 40%;
+    border: 2px solid #f9f5f1;
+    background-color: #ffb870;
+    border-radius: 5px;
+}
+
+/* Specific styles for dropdown menu links */
+.Navbar .dropdown-content .navlink {
+    position: relative;
+}
+
+.Navbar .dropdown-content a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translate(-50%, -50%);
+    border: 0px solid transparent;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.Navbar .dropdown-content a:hover::after {
+    width: 100%;
+    height: 80%;
+    border: 1px solid #ffb870;
 }
 
 @media screen and (max-width: 1200px) {
