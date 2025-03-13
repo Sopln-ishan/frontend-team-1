@@ -69,33 +69,33 @@ const Contact = () => {
     },
     {
       name: "JORDAN",
-      image1: "japan1.jpg",
-      image2: "japan2.jpg",
+      image1: "https://www.planetware.com/wpimages/2020/03/jordan-top-attractions-petra.jpg",
+      image2: "https://www.planetware.com/wpimages/2020/03/jordan-top-attractions-petra.jpg",
       // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "IRAQ",
-      image1: "japan1.jpg",
-      image2: "japan2.jpg",
+      image1: "https://media.istockphoto.com/id/1441414728/photo/agha-bozorg-mosque-kashan-iraq.jpg?s=612x612&w=0&k=20&c=zJ0yagPZHwQZcvqByBQAHXPmphTOPbyILuTW7jJeX_4=",
+      image2: "https://media.istockphoto.com/id/1441414728/photo/agha-bozorg-mosque-kashan-iraq.jpg?s=612x612&w=0&k=20&c=zJ0yagPZHwQZcvqByBQAHXPmphTOPbyILuTW7jJeX_4=",
       // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "SYRIA",
-      image1: "japan1.jpg",
-      image2: "japan2.jpg",
+      image1: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/eb/32/93/an-amazing-place-to-visit.jpg?w=500&h=500&s=1",
+      image2: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/eb/32/93/an-amazing-place-to-visit.jpg?w=500&h=500&s=1",
       // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "LEBANON",
-      image1: "japan1.jpg",
-      image2: "japan2.jpg",
+      image1: "https://media.istockphoto.com/id/513441442/photo/sea-landscape-with-pigeons-rock-beirut-lebanon.jpg?s=612x612&w=0&k=20&c=Ay_boBxPPx86n_hC78m8S9swFKIROjKQLbbRfXSEBh8=",
+      image2: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/49/49/81/caption.jpg?w=500&h=500&s=1",
       // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "EGYPT",
-      image1: "japan1.jpg",
-      image2: "japan2.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      image1: "https://media.istockphoto.com/id/506604108/photo/full-sphinx-profile-pyramids-walkway-giza.jpg?s=612x612&w=0&k=20&c=DvpXHu0OvQjKLzSwslZ3iCScIMiebWmOPxxGBV0yLyU=",
+      image2: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/7d/2c/pyramids-of-giza.jpg?w=500&h=500&s=1",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
   ];
 
