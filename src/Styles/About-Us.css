@@ -8,7 +8,7 @@
 .about-us-heading-and-bkg-img {
     width: 100%;
     height: 700px;
-    background-image: url(../images/about-us-sample-bkg-img.avif);
+    background-image: url(../../images/road-aboutus.png);
     background-size: cover;
     background-attachment: fixed;
 }
