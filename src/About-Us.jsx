@@ -36,6 +36,63 @@ const AboutUs = () => {
             id: 2
         }
     ];
+    const timelineData = [
+        {
+          week: "WEEK ONE",
+          title: "UNDERSTAND",
+          description: "Gather existing knowledge, expose assumptions and unknowns.",
+          icon: "📖",
+        },
+        {
+          week: "WEEK TWO",
+          title: "DIVERGE",
+          description:
+            "Eliminate all limits. Our goal is to explore as many materials, models, or ideas as possible.",
+          icon: "🛠️",
+        },
+        {
+          week: "WEEK THREE",
+          title: "CONVERGE",
+          description:
+            "Our goal is the value of the proposition that will be moved forward.",
+          icon: "🔗",
+        },
+        {
+          week: "WEEK FOUR",
+          title: "PROTOTYPING",
+          description:
+            "During this phase, we build a quick and cheap version to test the feasibility of ideas.",
+          icon: "🛠️",
+        },
+        {
+          week: "WEEK FIVE",
+          title: "TESTING",
+          description:
+            "Ensure that your product meets the needs of users and see how effective it is.",
+          icon: "⚙️",
+        },
+        {
+          week: "WEEK SIX",
+          title: "REITERATION",
+          description:
+            "Refine the solution to fix any issues and improve its functionality.",
+          icon: "🔄",
+        },
+        {
+          week: "WEEK SEVEN",
+          title: "REVIEW",
+          description:
+            "To review means to look back over time, evaluating the work that has been done.",
+          icon: "✔️",
+        },
+        {
+          week: "WEEK EIGHT",
+          title: "FINALIZE",
+          description:
+            "When you are satisfied with the final design, it’s time to finalize and present.",
+          icon: "🏁",
+        },
+      ];
 
     return ( 
         <>
@@ -73,6 +130,19 @@ const AboutUs = () => {
                         ))}
                     </div>
                 </div>
+                <div className="timeline-container">
+                    <h1>Our Glorious Past..</h1>
+                    {timelineData.map((item, index) => (
+                     <div key={index} className="timeline-item">
+                       <div className="timeline-icon">{item.icon}</div>
+                       <div className="timeline-content">
+                         <h3>{item.week}</h3>
+                         <h4>{item.title}</h4>
+                         <p>{item.description}</p>
+                       </div>
+                </div>
+      ))}
+    </div>
             </div>
         </> 
     );
