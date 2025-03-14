@@ -10,7 +10,7 @@
 .company-name-bkg-img {
     height: 100%;
     width: 100%;
-    background-image: url(trucks-home2.png);
+    background-image: url(../../images/trucks-home2.png);
     background-size: cover;
     background-attachment: fixed;
 }

@@ -90,6 +90,11 @@
   text-align: center;
 }
 
+.query
+{
+  background: url('../../images/raise-a-query2.png');
+  background-repeat: no-repeat;
+}
 .form-container {
   width: 50%;
   margin: 100px auto 0px auto;
