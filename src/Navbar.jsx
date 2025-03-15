@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 const Navbar = () => {   
     return (
         <>
@@ -28,7 +29,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="navlink">
-                <Link to="/Our-Services.jsx">
+                <Link to="/Home.jsx/#our-services">
                     Our Services 
                 </Link>
                 </div>
@@ -54,7 +55,7 @@ const Navbar = () => {
                     Why Us 
                 </Link>
 
-                <Link to="/Our-Services.jsx">
+                <Link to="/#our-services">
                     Our Services 
                 </Link>
 

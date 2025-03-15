@@ -4,37 +4,37 @@ import { Link } from 'react-router-dom';
 const OurServices = () => {
   const linkCards = [
     {
-      title: 'Bonded Movements Form',
+      title: 'Bonded Movements',
       src: '/Services/BondedMovementsForm.jsx',
       icon: 'icon.jpg',
       id: 1
     },
     {
-      title: 'Border Clearances Form',
+      title: 'Border Clearances',
       src: '/Services/BorderClearancesForm.jsx',
       icon: 'icon.jpg',
       id: 2
     },
     {
-      title: 'Importer Exporter Form',
+      title: 'Importer Exporter',
       src: '/Services/ImportExporterForm.jsx',
       icon: 'icon.jpg',
       id: 3
     },
     {
-      title: 'Integrated Trucking Form',
+      title: 'Integrated Trucking',
       src: '/Services/IntegratedTruckingForm.jsx',
       icon: 'icon.jpg',
       id: 4
     },
     {
-      title: 'Project Cargo Form',
+      title: 'Project Cargo',
       src: '/Services/ProjectCargoForm.jsx',
       icon: 'icon.jpg',
       id: 5
     },
     {
-      title: 'Shipping Documents Form',
+      title: 'Shipping Documents',
       src: '/Services/ShippingDocumentsForm.jsx',
       icon: 'icon.jpg',
       id: 6
@@ -42,7 +42,7 @@ const OurServices = () => {
   ]
   return (
     <div className='our-services-section'>
-      <div className='our-services-bkg-img'>
+      <div className='our-services-heading'>
         <h2>Our Services</h2>
       </div>
 
