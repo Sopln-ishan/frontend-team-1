@@ -28,15 +28,15 @@ const WhyUs = () => {
         
         <div className="icons">
           <div class="icon-card">
-            <a href="#Reliability" ><img src="../images/trust.png" alt="Our Reliability" height="100px" width="100px" class="rounded-image" /></a> 
+            <a href="#Reliability" ><img src="../images/trust.png" alt="Our Reliability" height="100px" width="auto" class="rounded-image" /></a> 
             <h3 className="icon-text">Our Relaibility</h3>
           </div>
           <div class="icon-card">
-            <a href="#Ratings"><img src="../images/people.png" alt="What People Think" height="100px" width="100px"class="rounded-image" /></a>
+            <a href="#Ratings"><img src="../images/people.png" alt="What People Think" height="100px" width="auto"class="rounded-image" /></a>
             <h3 className="icon-text">People's Reviews</h3>
           </div>
           <div class="icon-card">
-            <a href="#Achievements"><img src="../images/victory.png" alt="Our Achievements" height="100px" width="100px" class="rounded-image" /></a>
+            <a href="#Achievements"><img src="../images/victory.png" alt="Our Achievements" height="100px" width="auto" class="rounded-image" /></a>
             <h3 className="icon-text">Our Achievements</h3>
           </div>
         </div>
