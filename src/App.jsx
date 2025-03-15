@@ -11,13 +11,6 @@ import Footer from './Footer';
 import OurServices from './Our-Services';
 import WhyUs from './Why-Us';
 
-
-function App() {
-  useEffect(() => {
-    document.body.style.backgroundColor = "#F4EAE2"; // Change to desired color
-  }, []);
-  
-
 function App() {
   return (
     <>
@@ -51,5 +44,5 @@ function App() {
     </>
   );
 }
-}
+
 export default App;
