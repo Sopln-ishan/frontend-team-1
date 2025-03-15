@@ -1,9 +1,7 @@
-/* WhyUs.css */
 #why-us {
   margin-top: 100px;
   width: 100%;
   text-align: center;
-  background-color: #f9f5f1;
 }
   
 .why-us-heading-and-bkg-img {
@@ -14,37 +12,26 @@
   background-size: cover;
   background-attachment: fixed;
 }
-  
 
-.why-us {
-  padding: 200px;
-  font-size: 36px; 
-  font-weight: bold; 
-  color: white; 
-  text-align: center;
-  margin-bottom: 200px; 
-}
- 
 .why-us-heading-and-bkg-img h1 {
   font-size: 80px;
   padding: 40px 80px;
   color: #ffb870;
-  height:70px;
   margin-bottom: 60px;
 }
 
 .icons {
-  justify-content: space-evenly;
+  justify-content: center; /* Centers horizontally */
   align-items: center;
   text-align: center;
   display:flex;
   flex-wrap: nowrap;
+  gap: 200px;
   padding: 3cm;
   margin-bottom: 40px;
 }
 
 .icon-card {
-  text-decoration-color: #f9f5f1;
   text-align: centre;
   padding: 10px;
 }
@@ -58,57 +45,57 @@
 }
 
 .rounded-image {
-  border-radius: 100px; /* Adjust the value for more or less rounding */
+  border-radius: 100px;
 }
 
-.icon-text {
+.icon-text{
   color: #f9f5f1;
   padding: 10px;
-  font-size: 20px;
 }
 
 #Reliability {
-  margin: 40px auto;
+  margin-top: 80px;
 }
 
 .reliability-heading {
   font-size: 33px;
   text-align: center;
-  margin: 0px;
 }
 
 .trust-ensure {
+  padding: 40px 80px;
   display: flex;
-  justify-content: space-around;
-  padding: 20px 80px;
+  justify-content: space-evenly;
 }
 
 .trust-card {
   padding: 20px;
-  margin: 20px;
-  background-color: #F4EAE2;
-  border-radius: 50px;
+  width: 40%;
+  background-color: #f1dfce;
+  border-radius: 40px;
 }
 
 .trust-card p {
   text-align: justify;
 }
-
+  
 #Achievements {
   margin-top: 80px;
 }
 
-.achievements-heading{
-  color: #191310;
+.achievements-heading {
   font-size: 33px;
   text-align: center;
-  margin: 0px;
+}
+
+.achievements {
+  padding: 40px 80px;
 }
 
 .achievement-card {
   display: flex;
   justify-content: space-evenly;
-  padding: 80px;
+  margin: 20px 0px;
 }
 
 .achievement-text {
@@ -120,13 +107,13 @@
 .achievement-card img {
   width: 30%;
   height: 70%;
-  background-size: cover;
   border-radius: 50px;
 }
-
+  
 .future-goals {
-  padding: 80px;
+  color: #191310;
   text-align: left;
+  padding: 80px;
 }
 
 .future-goals h2 {
