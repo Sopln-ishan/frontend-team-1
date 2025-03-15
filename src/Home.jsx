@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import OurServices from './Our-Services.jsx';
 import OurGuarantees from './Guarantees.jsx';
+import PastClients from './PastClients.jsx';
 import BondedMovementsForm from "./Services/BondedMovementsForm";
 import BorderClearancesForm from "./Services/BorderClearancesForm";
 import ImporterExporterForm from "./Services/ImporterExporterForm";
@@ -53,6 +54,7 @@ const Home = () => {
         </div>
 
         <OurGuarantees className="guarantees-section" />
+        <PastClients className="past-clients-section" />
         </>
     );
 }

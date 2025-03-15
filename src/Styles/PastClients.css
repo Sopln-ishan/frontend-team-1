@@ -1,0 +1,26 @@
+.past-clients-section {
+    margin: 80px auto;
+}
+
+.client-card-heading {
+    font-size: 33px;
+    text-align: center;
+}
+
+.client-cards-container {
+    max-width: 80%;
+    margin: 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+}
+
+.client-card {
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 40px 10px;
+}
