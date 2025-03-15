@@ -7,7 +7,7 @@ const WhyUs = () => {
     {
       name: 'Our Reliability',
       link: '#Reliability',
-      img: '../images/trust.png',
+      img: '../images/trust-hover.png',
       altText: 'Our Reliability Image',
       height: '200px',
       width: '200px'
@@ -15,7 +15,7 @@ const WhyUs = () => {
     {
       name: 'Our Achievements',
       link: '#Achievements',
-      img: '../images/victory.png',
+      img: '../images/victory-hover.png',
       altText: 'Our Achievements Image',
       height: '200px',
       width: '200px'
