@@ -1,0 +1,135 @@
+/* WhyUs.css */
+#why-us {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #f9f5f1;
+}
+  
+.why-us-heading-and-bkg-img {
+  text-align: center;
+  width: 100%;
+  height: 650px;
+  background-image: url(../images/whyustopimg.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+  
+
+.why-us {
+  padding: 200px;
+  font-size: 36px; 
+  font-weight: bold; 
+  color: white; 
+  text-align: center;
+  margin-bottom: 200px; 
+}
+ 
+.why-us-heading-and-bkg-img h1 {
+  font-size: 80px;
+  padding: 40px 80px;
+  color: #ffb870;
+  height:70px;
+  margin-bottom: 60px;
+}
+
+.icons {
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  display:flex;
+  flex-wrap: nowrap;
+  padding: 3cm;
+  margin-bottom: 40px;
+}
+
+.icon-card {
+  text-decoration-color: #f9f5f1;
+  text-align: centre;
+  padding: 10px;
+}
+
+.icon-card:hover .icon-text, .icon-card:hover .rounded-image {
+  color: #ffb870;
+}
+
+.icons-navlink {
+  text-decoration: none;
+}
+
+.rounded-image {
+  border-radius: 100px; /* Adjust the value for more or less rounding */
+}
+
+.icon-text {
+  color: #f9f5f1;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#Reliability {
+  margin: 40px auto;
+}
+
+.reliability-heading {
+  font-size: 33px;
+  text-align: center;
+  margin: 0px;
+}
+
+.trust-ensure {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 80px;
+}
+
+.trust-card {
+  padding: 20px;
+  margin: 20px;
+  background-color: #F4EAE2;
+  border-radius: 50px;
+}
+
+.trust-card p {
+  text-align: justify;
+}
+
+#Achievements {
+  margin-top: 80px;
+}
+
+.achievements-heading{
+  color: #191310;
+  font-size: 33px;
+  text-align: center;
+  margin: 0px;
+}
+
+.achievement-card {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px;
+}
+
+.achievement-text {
+  width: 70%;
+  text-align: left;
+  padding: 20px;
+}
+
+.achievement-card img {
+  width: 30%;
+  height: 70%;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.future-goals {
+  padding: 80px;
+  text-align: left;
+}
+
+.future-goals h2 {
+  font-size: 33px;
+}
+  

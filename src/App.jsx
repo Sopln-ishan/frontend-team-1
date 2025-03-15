@@ -10,16 +10,12 @@ import ContactUs from './Contact';
 import Footer from './Footer';
 import WhyUs from './Why-Us';
 
-<<<<<<< HEAD
-function App() {
-=======
 
 function App() {
   useEffect(() => {
     document.body.style.backgroundColor = "#F4EAE2"; // Change to desired color
   }, []);
 
->>>>>>> f403ed5f51d622cebff42386729c3e3c064410ab
   return (
     <>
       <Router>
