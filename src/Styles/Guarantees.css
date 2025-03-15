@@ -1,0 +1,24 @@
+.guarantees {
+    margin: 100px 0px;
+}
+
+.guarantees-heading {
+    font-size: 33px;
+    text-align: center;
+}
+
+.guarantee-card-container {
+    margin: 20px 40px;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.guarantee-card {
+    width: 24%;
+    text-align: center;
+}
+
+.guarantee-card img {
+    padding: 10%;
+}
