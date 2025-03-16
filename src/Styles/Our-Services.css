@@ -1,5 +1,14 @@
 .our-services-section {
     margin: 80px 0px;
+    padding: 60px 0px;
+    background-image: url(../images/our-services-bkg-3.jpg);
+    height: 50vw;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .our-services-heading {
@@ -9,33 +18,89 @@
 
 .our-services-card-container {
     text-align: center;
-    margin: 20px auto;
+    margin: 60px auto;
     display: flex;
     justify-content: space-evenly;
+    width: 80%;
 }
 
 .link-card {
     width: 14%;
-    height: auto;
-    color: #191310;
+    height: 350px;
+    color: #f9f5f1;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .link-card p {
-    color: #191310;
+    color: #f9f5f1;
     transition: color 0.2s;
+    padding: 10%;
+    font-size: 20px;
 }
 
 .link-card img {
-    height: 60%;
-    padding: 10% 0px;
-}
-
-.link-card p {
-    padding: 10%;
-    color: #191310;
+    margin: 0px auto;
+    width: 50%;
+    height: 25%;
 }
 
 .link-card:hover p {
     color: #ffb870;
+}
+
+@media screen and (max-width: 1200px) {
+    .our-services-section {
+        height: 40vw;
+    }
+
+    .link-card {
+        height: 250px;
+        font-size: 27px;
+    }
+
+    .link-card img {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .link-card {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .our-services-section {
+        height: 70vw;
+    }
+    .our-services-card-container {
+        flex-wrap: wrap;
+    }
+
+    .link-card {
+        height: 70%;
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .our-services-section {
+        height: auto;
+    }
+
+    .our-services-heading {
+        font-size: 20px;
+    }
+
+    .our-services-card-container {
+        flex-wrap: wrap;
+    }
+
+    .link-card {
+        width: 50%;
+        font-size: 15px;
+    }
 }

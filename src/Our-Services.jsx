@@ -6,40 +6,41 @@ const OurServices = () => {
     {
       title: 'Bonded Movements',
       src: '/Services/BondedMovementsForm.jsx',
-      icon: 'icon.jpg',
+      icon: '../images/warehouse.png',
       id: 1
     },
     {
       title: 'Border Clearances',
       src: '/Services/BorderClearancesForm.jsx',
-      icon: 'icon.jpg',
+      icon: '../images/truck.png',
       id: 2
     },
     {
       title: 'Importer Exporter',
       src: '/Services/ImportExporterForm.jsx',
-      icon: 'icon.jpg',
+      icon: '../images/worldwide.png',
       id: 3
     },
     {
       title: 'Integrated Trucking',
       src: '/Services/IntegratedTruckingForm.jsx',
-      icon: 'icon.jpg',
+      icon: '../images/delivery-truck.png',
       id: 4
     },
     {
       title: 'Project Cargo',
       src: '/Services/ProjectCargoForm.jsx',
-      icon: 'icon.jpg',
+      icon: '../images/delivery-box.png',
       id: 5
     },
     {
       title: 'Shipping Documents',
       src: '/Services/ShippingDocumentsForm.jsx',
-      icon: 'icon.jpg',
+      icon: '../images/plan.png',
       id: 6
     }
-  ]
+  ];
+
   return (
     <div className='our-services-section'>
       <div className='our-services-heading'>

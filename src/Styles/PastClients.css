@@ -25,22 +25,7 @@
 }
 
 .clients-container::-webkit-scrollbar {
-    height: 10px;
-    border-radius: 5px;
-    background-color: #f9f5f1;
-}
-
-.clients-container::-webkit-scrollbar-track {
-    border-radius: 5px;
-}
-
-.clients-container::-webkit-scrollbar-thumb {
-    background-color: #b9b9b9;
-    border-radius: 5px;
-}
-
-.clients-container::-webkit-scrollbar-thumb:hover {
-    background: #9d9d9d;
+    display: none;
 }
 
 .client-image {
@@ -52,36 +37,13 @@
 }
 
 .client-image img {
-    width: 100%;
-    height: 200px;
-    padding: 25px;
+    height: 250px;
 }
 
-.nav-btn {
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    background-color: #c3c3c3;
-    border-radius: 6px;
-    height: 200px;
-    width: 30px;
-    margin: 5px;
-}
-
-.nav-btn:hover {
-    background-color: #ffc994;
-}
 .clients-container {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none; /* Firefox */
-}
-
-.clients-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
 }
 

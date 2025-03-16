@@ -10,12 +10,12 @@ const PastClients = () => {
     const scrollInterval = useRef(null);
 
     const clients = [
-        { name: 'company 1', img: 'company-1.jpg', id: '1' },
-        { name: 'company 2', img: 'company-2.jpg', id: '2' },
-        { name: 'company 3', img: 'company-3.jpg', id: '3' },
-        { name: 'company 4', img: 'company-4.jpg', id: '4' },
-        { name: 'company 5', img: 'company-5.jpg', id: '5' },
-        { name: 'company 6', img: 'company-6.jpg', id: '6' }
+        { name: 'company 1', img: '../images/placeholder-company-logo.png', id: '1' },
+        { name: 'company 2', img: '../images/placeholder-company-logo.png', id: '2' },
+        { name: 'company 3', img: '../images/placeholder-company-logo.png', id: '3' },
+        { name: 'company 4', img: '../images/placeholder-company-logo.png', id: '4' },
+        { name: 'company 5', img: '../images/placeholder-company-logo.png', id: '5' },
+        { name: 'company 6', img: '../images/placeholder-company-logo.png', id: '6' }
     ];
 
     // Duplicate the clients array to create the illusion of infinite scrolling
