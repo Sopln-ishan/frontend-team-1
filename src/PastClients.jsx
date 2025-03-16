@@ -58,10 +58,9 @@ const PastClients = () => {
                 <div className="clients-container" ref={sliderRef}>
                     {clients.map((client) => {
                     return (
-                        <div className='client-image'>
+                        <div className='client-image' key={ client.id }>
                             <img
                                 alt={ client.name }
-                                key={ client.id }
                                 src={ client.img }
                             />
                         </div>

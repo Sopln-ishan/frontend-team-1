@@ -27,8 +27,8 @@ const OurGuarantees = () => {
             </div>
 
             <div className="guarantee-card-container">
-                { guarantees.map((guarantee) => (
-                    <div className="guarantee-card">
+                { guarantees.map((guarantee, index) => (
+                    <div className="guarantee-card" key={ index }>
                         <img src={ guarantee.icon } />
                         <p>{ guarantee.title }</p>
                     </div>
