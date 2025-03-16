@@ -74,3 +74,14 @@
 .nav-btn:hover {
     background-color: #ffc994;
 }
+.clients-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+}
+
+.clients-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
