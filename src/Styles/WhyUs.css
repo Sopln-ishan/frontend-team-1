@@ -17,7 +17,6 @@
   font-size: 80px;
   padding: 40px 80px;
   color: #ffb870;
-  margin-bottom: 60px;
 }
 
 .icons {
@@ -51,6 +50,7 @@
 .icon-text{
   color: #f9f5f1;
   padding: 10px;
+  font-size: 20px;
 }
 
 #Reliability {

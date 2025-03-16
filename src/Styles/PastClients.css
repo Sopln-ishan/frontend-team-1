@@ -7,20 +7,70 @@
     text-align: center;
 }
 
-.client-cards-container {
-    max-width: 80%;
-    margin: 20px 100px;
+.client-card-slider {
+    align-items: center;
     display: flex;
-    justify-content: space-evenly;
-    overflow-x: scroll;
+    justify-content: center;
+    margin-top: 150px;
 }
 
-.client-card {
-    text-align: center;
-    height: 250px;
-    width: 250px;
-    border-radius: 125px;
-    border-style: solid;
-    border-width: 1px;
-    margin: 40px 10px;
+.clients-container {
+    width: 80%;
+    height: 300px;
+    overflow-x: scroll;
+    display: flex;
+    /* Add the following lines for smooth scrolling */
+    scroll-behavior: smooth;
+    transition: scroll 0.3s ease-in-out;
+}
+
+.clients-container::-webkit-scrollbar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f9f5f1;
+}
+
+.clients-container::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+.clients-container::-webkit-scrollbar-thumb {
+    background-color: #b9b9b9;
+    border-radius: 5px;
+}
+
+.clients-container::-webkit-scrollbar-thumb:hover {
+    background: #9d9d9d;
+}
+
+.client-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+
+.client-image img {
+    width: 100%;
+    height: 200px;
+    padding: 25px;
+}
+
+.nav-btn {
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #c3c3c3;
+    border-radius: 6px;
+    height: 200px;
+    width: 30px;
+    margin: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #ffc994;
 }

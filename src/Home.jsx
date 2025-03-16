@@ -53,8 +53,8 @@ const Home = () => {
             </Router>
         </div>
 
-        <OurGuarantees className="guarantees-section" />
-        <PastClients className="past-clients-section" />
+        <OurGuarantees />
+        <PastClients />
         </>
     );
 }
