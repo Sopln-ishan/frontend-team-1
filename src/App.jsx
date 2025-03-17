@@ -13,7 +13,7 @@ import WhyUs from './Why-Us';
 
 function App() {
   useEffect(() => {
-    document.body.style.backgroundColor = "#191310"; // Change to desired color
+    document.body.style.backgroundColor = "#F4EAE2"; // Change to desired color
   }, []);
 
   return (
