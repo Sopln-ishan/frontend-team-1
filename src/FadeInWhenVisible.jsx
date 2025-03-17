@@ -1,24 +1,15 @@
-import { useEffect, useRef } from "react";
-import { useInView } from "framer-motion";
-import { motion, useAnimation } from "framer-motion";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const FadeInWhenVisible = ({ children }, transitionDuration, delayDuration) => {
     const ref = useRef(null);
-    const controls = useAnimation();
-    const isInView = useInView(ref);
-
-    useEffect(() => {
-        if(isInView === true) {
-            controls.start('visible');
-        }
-    }, [isInView]);
 
     return (
         <motion.div
             ref={ ref }
             variants={{
-                hidden: { opacity: 0, y: 100 },
-                visible: { opacity: 1, y: 10 }
+                hidden: { opacity: 0, y: 150 },
+                visible: { opacity: 1, y: 0 }
             }}
             initial='hidden'
             whileInView='visible'

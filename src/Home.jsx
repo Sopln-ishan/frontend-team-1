@@ -21,7 +21,7 @@ const Home = () => {
                     <div className="company-text-and-img">
                         <motion.h1
                             variants={{
-                                hidden: { opacity: 0, y: 300},
+                                hidden: { opacity: 0, y: 150},
                                 visible: { opacity: 1, y: -10 }
                             }}
                             initial='hidden'
@@ -32,7 +32,7 @@ const Home = () => {
                         </motion.h1> 
                         <motion.p 
                             variants={{
-                                hidden: { opacity: 0, y: 300 },
+                                hidden: { opacity: 0, y: 150 },
                                 visible: { opacity: 1, y: 0 }
                             }}
                             initial='hidden'

@@ -49,9 +49,7 @@ const OurServices = () => {
         <div className='our-services-heading' style={{ position: 'relative', overflow: 'hidden' }}>
           <h2>Our Services</h2>
         </div>
-      } 
-      transition={ 0.25 }
-      delay={ 0 }
+      }
       />
 
       <div className='our-services-card-container' style={{ position: 'relative', overflow: 'hidden' }}>
