@@ -1,8 +1,7 @@
 import { useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './Styles/PastClients.css';
-
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 const PastClients = () => {
     const sliderRef = useRef(null);
@@ -68,21 +67,29 @@ const PastClients = () => {
 
     return (
         <div className='past-clients-section'>
-            <h1 className="client-card-heading">Our Past Clients</h1>
-            <div
-                className='client-card-slider'
-                onMouseEnter={pauseScroll}
-                onMouseLeave={resumeScroll}
-            >
-            
-                <div className="clients-container" ref={sliderRef}>
-                    {duplicatedClients.map((client, index) => (
-                        <div className='client-image' key={`${client.id}-${index}`}>
-                            <img alt={client.name} src={client.img} />
-                        </div>
-                    ))}
+            <FadeInWhenVisible children={
+                <h1 className="client-card-heading">Our Past Clients</h1>
+            } transition={ 0.5 } />
+
+            <FadeInWhenVisible children={
+                <div
+                    className='client-card-slider'
+                    onMouseEnter={pauseScroll}
+                    onMouseLeave={resumeScroll}
+                >
+                
+                    <div className="clients-container" ref={sliderRef}>
+                        {duplicatedClients.map((client, index) => (
+                            <div className='client-image' key={`${client.id}-${index}`}>
+                                <img alt={client.name} src={client.img} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            } 
+            transition={ 0.5 } 
+            delay={ 0.25 }
+            />
         </div>
     );
 };

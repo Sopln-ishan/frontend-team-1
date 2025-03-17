@@ -1,3 +1,5 @@
+import FadeInWhenVisible from './FadeInWhenVisible';
+import { motion } from 'framer-motion';
 import './Styles/Our-Services.css';
 import { Link } from 'react-router-dom';
 
@@ -43,19 +45,36 @@ const OurServices = () => {
 
   return (
     <div className='our-services-section'>
-      <div className='our-services-heading'>
-        <h2>Our Services</h2>
-      </div>
+      <FadeInWhenVisible children={  
+        <div className='our-services-heading' style={{ position: 'relative', overflow: 'hidden' }}>
+          <h2>Our Services</h2>
+        </div>
+      } 
+      transition={ 0.25 }
+      delay={ 0 }
+      />
 
-      <div className='our-services-card-container'>
+      <div className='our-services-card-container' style={{ position: 'relative', overflow: 'hidden' }}>
         {linkCards.map((linkCard) => (
-          <Link to={ linkCard.src } className='link-card' key={ linkCard.id }>
-            <img src={ linkCard.icon } />
-            <p>{ linkCard.title }</p>
-          </Link>
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 10 }
+            }}
+
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.25*linkCard.id }}
+            key={ linkCard.id }
+          >
+            <Link to={ linkCard.src } className='link-card'>
+              <img src={ linkCard.icon } />
+              <p>{ linkCard.title }</p>
+            </Link>
+          </motion.div>
           ))
         }
-        
       </div>
     </div>
   );

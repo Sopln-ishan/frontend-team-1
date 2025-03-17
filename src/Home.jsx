@@ -1,5 +1,5 @@
-import { use, useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { useRef } from 'react';
+import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import OurServices from './Our-Services';
 import BorderClearancesForm from './Services/BorderClearancesForm';
@@ -15,10 +15,10 @@ const Home = () => {
     const ref = useRef(null);
 
     return (
-        <div className='home-page'>
+        <div className='home-page' style={{ position: 'relative', overflow: 'hidden'}}>
             <div ref={ ref } className="hero-section">
                 <div className="company-name-section">
-                    <div className="company-text-and-img" style={{ position: 'relative', overflow: 'hidden'}}>
+                    <div className="company-text-and-img">
                         <motion.h1
                             variants={{
                                 hidden: { opacity: 0, y: 300},
@@ -26,6 +26,7 @@ const Home = () => {
                             }}
                             initial='hidden'
                             animate='visible'
+                            transition={{ duration: 1 }}
                         >
                             Company Name
                         </motion.h1> 
@@ -36,7 +37,7 @@ const Home = () => {
                             }}
                             initial='hidden'
                             animate='visible'
-                            transition={{ delay: 0.25 }}
+                            transition={{ duration: 1, delay: 0.25 }}
                         >
                             Something nice about the company
                         </motion.p>
