@@ -1,6 +1,6 @@
 .our-services-section {
     background-image: url(../../images/our-services-bkg-3.jpg);
-    height: 50vw;
+    height: 30vw;
     width: 100vw;
     background-size: cover;
     background-attachment: fixed;
@@ -9,14 +9,14 @@
     justify-content: center;
 }
 
-.our-services-heading {
+.our-services-heading h2 {
     text-align: center;
-    font-size: 33px;
+    font-size: 50px;
 }
 
 .our-services-card-container {
     text-align: center;
-    margin: 60px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: space-evenly;
     width: 80%;

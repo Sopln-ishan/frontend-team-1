@@ -1,9 +1,8 @@
 .footer {
   background: linear-gradient(90deg, #050403 0%, #191310 100%);
-  color: white;
+  color: #f9f5f1;
   padding: 50px 0 20px;
   font-family: Arial, sans-serif;
-  border-top-left-radius: 100px;
 }
 
 .footer-content {
@@ -41,7 +40,7 @@
 .underline {
   width: 50px;
   height: 2px;
-  background-color: white;
+  background-color: #f9f5f1;
   margin-bottom: 20px;
 }
 
@@ -61,14 +60,14 @@
 }
 
 .footer-section ul li a {
-  color: white;
+  color: #f9f5f1;
   text-decoration: none;
   font-size: 14px;
   transition: all 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #ccc;
+  color: #f9f5f1;
   padding-left: 5px;
 }
 
@@ -96,7 +95,7 @@
 .input-group input {
   background: transparent;
   border: none;
-  color: white;
+  color: #f9f5f1;
   font-size: 14px;
   padding: 12px 12px 12px 40px;
   width: 100%;
@@ -104,14 +103,14 @@
 }
 
 .input-group input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: #f9f5f1;
 }
 
 .input-group button {
-  background-color: white;
+  background-color: #f9f5f1;
   border: none;
   border-radius: 50%;
-  color: #000428;
+  color: #191310;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -130,9 +129,9 @@
 }
 
 .social-icon {
-  background-color: white;
+  background-color: #f9f5f1;
   border-radius: 50%;
-  color: #000428;
+  color: #191310;
   display: flex;
   align-items: center;
   justify-content: center;

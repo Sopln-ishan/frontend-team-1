@@ -12,9 +12,9 @@ const CountryCard = ({ country }) => {
         backgroundPosition: 'center'
       }}
       variants={{
-        hidden: { opacity: 0, height: 300 },
-        visible: { opacity: 1, height: 205 },
-        hover: { opacity: 1, height: 250 }
+        hidden: { opacity: 0, height: 300, marginBottom: 100 },
+        visible: { opacity: 1, height: 205, marginBottom: 100 },
+        hover: { opacity: 1, height: 250, marginBottom: 50 }
       }}
       initial='hidden'
       whileInView='visible'
@@ -169,14 +169,17 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
         <section className="addr">
           <h1>Our Presence</h1>
+
           <div className="country-grid">
             {countryList.map((country, index) => (
               <CountryCard key={index} country={country} />
             ))}
           </div>
         </section>
+
         <section className="query">
         <div className="form-container">
           <h2>Raise a Query</h2>

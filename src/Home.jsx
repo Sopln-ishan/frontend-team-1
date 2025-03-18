@@ -8,7 +8,7 @@ import ImporterExporterForm from './Services/ImporterExporterForm';
 import IntegratedTruckingForm from './Services/IntegratedTruckingForm';
 import ProjectCargoForm from './Services/ProjectCargoForm';
 import ShippingDocumentsForm from './Services/ShippingDocumentsForm';
-import OurGuarantees from './Guarantees';
+import OurIndustry from './Industry';
 import PastClients from './PastClients';
 
 const Home = () => {
@@ -85,7 +85,7 @@ const Home = () => {
                 </Router>
             </div>
 
-            <OurGuarantees />
+            <OurIndustry />
             <PastClients />
         </div>
     );
