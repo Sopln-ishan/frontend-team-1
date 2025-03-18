@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { motion } from 'framer-motion';
 
 const StatItem = ({ value, label, duration = 2000, suffix = "" }) => {
   const [count, setCount] = useState(0);
@@ -45,14 +46,23 @@ const StatItem = ({ value, label, duration = 2000, suffix = "" }) => {
 
 export default function StatsCounter() {
   return (
-    <div className="stats-container">
+    <motion.div className="stats-container"
+      variants={{
+        hidden: { opacity: 0, y: 200 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+      transition={{ druation: 0.5 }}
+    >
       <div className="stats-grid">
         <StatItem value={1200} label="Clients" suffix="+" />
         <StatItem value={10} label="Countries" />
         <StatItem value={750000} label="Trips" suffix="+" />
         <StatItem value={60000} label="Drivers" suffix="+" />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

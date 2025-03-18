@@ -28,8 +28,8 @@
 .Navbar .navigation-menu {
     position: absolute;
     top: 0px;
-    right: 30px;
-    width: 45%;
+    right: 50px;
+    width: 34%;
 
     display: flex;
     justify-content: space-around;

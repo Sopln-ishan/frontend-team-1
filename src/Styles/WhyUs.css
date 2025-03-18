@@ -1,56 +1,28 @@
 #why-us {
-  margin-top: 100px;
+  margin-top: 75px;
   width: 100%;
   text-align: center;
+  color: #f9f5f1;
 }
   
 .why-us-heading-and-bkg-img {
   text-align: center;
   width: 100%;
-  height: 650px;
+  height: 105vh;
   background-image: url(../../images/why-us.png);
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .why-us-heading-and-bkg-img h1 {
-  font-size: 80px;
-  padding: 40px 80px;
-  color: #ffb870;
-}
-
-.icons {
-  justify-content: center; /* Centers horizontally */
-  align-items: center;
+  padding-top: 80px;
   text-align: center;
-  display:flex;
-  flex-wrap: nowrap;
-  gap: 200px;
-  padding: 3cm;
-  margin-bottom: 40px;
-}
-
-.icon-card {
-  text-align: centre;
-  padding: 10px;
-}
-
-.icon-card:hover .icon-text, .icon-card:hover .rounded-image {
-  color: #ffb870;
-}
-
-.icons-navlink {
-  text-decoration: none;
-}
-
-.rounded-image {
-  border-radius: 100px;
-}
-
-.icon-text{
+  font-size: 120px;
+  padding-bottom: 50px;
   color: #f9f5f1;
-  padding: 10px;
-  font-size: 20px;
 }
 
 #Reliability {
@@ -58,65 +30,65 @@
 }
 
 .reliability-heading {
-  font-size: 33px;
+  font-size: 60px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .trust-ensure {
-  padding: 40px 80px;
+  margin: 40px auto;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .trust-card {
   padding: 20px;
+  margin-bottom: 80px;
   width: 40%;
-  background-color: #f1dfce;
+  background-color: #f9f5f1;
+  color: #191310;
   border-radius: 40px;
+}
+
+.trust-card h2 {
+  font-size: 40px;
 }
 
 .trust-card p {
   text-align: justify;
-}
-  
-#Achievements {
-  margin-top: 80px;
-}
-
-.achievements-heading {
-  font-size: 33px;
-  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  padding: 10px;
 }
 
-.achievements {
-  padding: 40px 80px;
+@media screen and (max-width: 1000px) {
+  .why-us-heading-and-bkg-img h1 {
+    font-size: 80px;
+  }
+
+  .trust-ensure {
+    margin: 40px auto;
+  }
+
+  .trust-card {
+    width: 85%;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
 }
 
-.achievement-card {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px 0px;
-}
+@media screen and (max-width: 620px) {
+  .why-us-heading-and-bkg-img h1 {
+    font-size: 60px;
+  }
 
-.achievement-text {
-  width: 70%;
-  text-align: left;
-  padding: 20px;
-}
+  .trust-card h2 {
+    font-size: 30px;
+  }
 
-.achievement-card img {
-  width: 30%;
-  height: 70%;
-  border-radius: 50px;
-}
-  
-.future-goals {
-  color: #191310;
-  text-align: left;
-  padding: 80px;
-}
-
-.future-goals h2 {
-  font-size: 33px;
+  .trust-card p {
+    font-size: 20px;
+  }
 }
   

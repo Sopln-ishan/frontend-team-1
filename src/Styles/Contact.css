@@ -1,5 +1,5 @@
 .contact-us-page {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .contactus
@@ -14,7 +14,7 @@
   width: 100%; 
   text-align: center;
   color: #191310;
-  height: 70vh;
+  height: 100vh;
   background-image: url('../../images/world-map.png');
   background-size: cover;
   background-position: center;
@@ -28,36 +28,35 @@
   padding: 20px;
   border-radius: 10px;
 }
-.text-overlay h1
-{
-  color: #f9f5f1;
+
+.text-overlay h1 {
+  font-size: 120px;
 }
   /* Card styling */
   /* Country cards section */
 
 .addr h1 {
   margin-top: 60px;
-  font-size: 7vh;
-  color: #191310;
+  font-size: 60px;
+  color: #f9f5f1;
   text-align: center;
 }
 
 .country-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* gap: 70px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   max-width: 1200px;
-  margin: 8vh 20vh;
+  margin: 8vh auto;
   padding: 0 20px;
   row-gap: 10vh;
-  column-gap: 10vh;
+  column-gap: 4%;
 }
 
 .country-card {
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 40%;
   padding: 25px;
-  /* transition: transform 0.1s ease, box-shadow 0.1s ease; */
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -70,7 +69,7 @@
 
 .country-name {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -92,6 +91,7 @@
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: center;
+  font-size: 30px;
 }
 
 .query
@@ -162,5 +162,33 @@ button:hover {
   color: green;
   font-size: 18px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .text-overlay h1 {
+    font-size: 80px;
+  }
+
+  .addr h1 {
+    font-size: 40px;
+  }
+
+  .country-name {
+    font-size: 30px;
+  }
+
+  .country-description {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .text-overlay h1 {
+    font-size: 60px;
+  }
+  
+  .country-card {
+    width: 80%;
+  }
 }
         
