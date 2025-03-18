@@ -63,7 +63,7 @@ const OurServices = () => {
             initial='hidden'
             whileInView='visible'
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.25*linkCard.id }}
+            transition={{ duration: 0.5, delay: 0.25 }}
             key={ linkCard.id }
           >
             <Link to={ linkCard.src } className='link-card'>
