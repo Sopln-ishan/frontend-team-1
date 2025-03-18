@@ -118,18 +118,6 @@ const AboutUs = () => {
                 <StatsCounter />
                 <hr />
 
-                <div className="cofounders-container">
-                    <h2 className="cofounders-title">Meet Our Co-founders</h2>
-                    <div className="cofounders-cards">
-                        {cofounders.map((founder, index) => (
-                            <div key={index} className="cofounder-card">
-                                <img src={founder.image} alt={founder.name} className="cofounder-avatar" />
-                                <h3 className="cofounder-name">{founder.name}</h3>
-                                <p className="cofounder-role">{founder.title}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
                 <div className="timeline-container">
                     <h1>Our Glorious Past..</h1>
                     {timelineData.map((item, index) => (

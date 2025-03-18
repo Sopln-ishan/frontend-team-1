@@ -118,59 +118,6 @@
   letter-spacing: 1px;
 }
 
-.cofounders-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background-color: #f3f4f6;
-}
-
-.cofounders-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-
-.cofounders-cards {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 20px;
-}
-
-.cofounder-card {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.cofounder-card:hover{
-  transform: translateY(-10px);
-  background: rgba(179, 178, 178, 0.2);
-}
-
-.cofounder-avatar {
-  width: 100%;
-  height: 20rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-}
-
-.cofounder-name {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.cofounder-role {
-  color: #4b5563;
-}
-
 .timeline-container {
   max-width: 800px;
   margin: 0 auto;
@@ -289,15 +236,6 @@
 
   .stat-item {
       margin: 10px;
-  }
-
-  .cofounders-cards {
-    display: block;
-  }
-
-  .cofounder-card {
-    width: 100%;
-    margin: 40px 0px;
   }
 }
 
