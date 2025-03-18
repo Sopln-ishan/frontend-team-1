@@ -74,8 +74,13 @@
     .our-services-section {
         height: 70vw;
     }
+
     .our-services-card-container {
         flex-wrap: wrap;
+    }
+
+    .our-services-heading {
+        margin-top: 80px;
     }
 
     .our-services-card-container div {

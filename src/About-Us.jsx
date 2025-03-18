@@ -97,8 +97,7 @@ const AboutUs = () => {
 
                         <div className="mission-section">
                             <h2>Our Mission</h2>
-                            <p>Our mission is to continually enhance our customer service by tailoring a broad range of services to meet your unique business needs. We are dedicated to providing innovative, cost-effective, and sustainable logistics solutions that support your ongoing success.
-                            </p>
+                            <p>Our mission is to continually enhance our customer service by tailoring a broad range of services to meet your unique business needs. We are dedicated to providing innovative, cost-effective, and sustainable logistics solutions that support your ongoing success.</p>
                         </div>
                       </div>
                     </motion.div>
@@ -128,8 +127,9 @@ const AboutUs = () => {
                     initial='hidden'
                     whileInView='visible'
                     viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
                   >
-                    About Company
+                    <h1>About Company</h1>
                   </motion.div>
 
                   <motion.div className="about-company-text"
@@ -140,9 +140,10 @@ const AboutUs = () => {
                     initial='hidden'
                     whileInView='visible'
                     viewport={{ once: true }}
-                    transition={{ delay: 0.25 }}
+                    transition={{ duration: 0.5, delay: 0.25 }}
                   >
-                    We offer a comprehensive solution for all supply chain needs, including trucking solutions, consultancy services, warehouse space, sea and air freight, and e-commerce solutions. Our team delivers innovative and sustainable solutions to address the ongoing challenges faced by our customers. Backed by extensive experience across diverse industry verticals such as retail, FMCG, e-commerce, supply chain and logistics, steel and aluminum, automobile, and transport, we are well-equipped to meet our clients' evolving needs.
+                    <p>Company is committed to delivering a seamless and satisfying experience to all its customers. We offer a comprehensive range of supply chain solutions, including trucking, consultancy, warehouse space, sea and air freight, and e-commerce services. Our team is dedicated to providing innovative and sustainable solutions to address the ongoing challenges faced by our customers. With extensive experience across diverse industry verticals such as retail, FMCG, e-commerce, supply chain and logistics, steel and aluminum, automobile, and transport, we bring valuable expertise to every partnership.</p><br />
+                    <p>We offer a comprehensive solution for all supply chain needs, including trucking solutions, consultancy services, warehouse space, sea and air freight, and e-commerce solutions. Our team delivers innovative and sustainable solutions to address the ongoing challenges faced by our customers. Backed by extensive experience across diverse industry verticals such as retail, FMCG, e-commerce, supply chain and logistics, steel and aluminum, automobile, and transport, we are well-equipped to meet our clients' evolving needs.</p>
                   </motion.div>
                 </div>
 
@@ -166,7 +167,7 @@ const AboutUs = () => {
                           initial='hidden'
                           whileInView='visible'
                           viewport={{ once: true }}
-                          transition={{ delay: 0.2*(index+1) }}
+                          transition={{ druation: 0.5, delay: 0.25 }}
                         >
                           <h3>{item.week}</h3>
                           <h4>{item.title}</h4>

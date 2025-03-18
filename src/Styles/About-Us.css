@@ -93,21 +93,23 @@
   margin: 20px auto;
 }
 
-.about-company-heading {
+.about-company-heading h1 {
   font-size: 60px;
   text-align: center;
   color: #f9f5f1;
   width: 80vw;
   padding: 20px 0;
+  font-weight: lighter;
 }
 
-.about-company-text {
+.about-company-text p {
   font-size: 30px;
   color: #f9f5f1;
   padding: 40px 0;
   width: 80vw;
   text-align: justify;
   line-height: 40px;
+  font-weight: lighter;
 }
 
 /* Main container */

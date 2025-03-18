@@ -54,6 +54,7 @@ export default function StatsCounter() {
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true }}
+      transition={{ druation: 0.5 }}
     >
       <div className="stats-grid">
         <StatItem value={1200} label="Clients" suffix="+" />

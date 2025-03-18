@@ -15,31 +15,31 @@ const Home = () => {
     const ref = useRef(null);
 
     return (
-        <div className='home-page' style={{ position: 'relative', overflow: 'hidden'}}>
+        <div className='home-page' style={{ overflow: 'hidden'}}>
             <div ref={ ref } className="hero-section">
                 <div className="company-name-section">
                     <div className="company-text-and-img">
                         <motion.h1
                             variants={{
-                                hidden: { opacity: 0, y: 150},
-                                visible: { opacity: 1, y: -10 }
+                                hidden: { opacity: 0, y: 300},
+                                visible: { opacity: 1, y: 0 }
                             }}
                             initial='hidden'
                             animate='visible'
-                            transition={{ duration: 1 }}
+                            transition={{ duration: 0.5 }}
                         >
                             Company Name
                         </motion.h1> 
                         <motion.p 
                             variants={{
-                                hidden: { opacity: 0, y: 150 },
+                                hidden: { opacity: 0, y: 300 },
                                 visible: { opacity: 1, y: 0 }
                             }}
                             initial='hidden'
                             animate='visible'
-                            transition={{ duration: 1, delay: 0.25 }}
+                            transition={{ duration: 0.5, delay: 0.25 }}
                         >
-                            Something nice about the company
+                            Company's Motto or Catchphrase
                         </motion.p>
                         {/* <motion.img
                             variants={{
