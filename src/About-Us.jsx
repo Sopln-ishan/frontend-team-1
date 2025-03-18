@@ -151,7 +151,7 @@ const AboutUs = () => {
 
                 <div className="timeline-section">
                   <h1>
-                    Our Glorious Past...
+                    Our Modus Operandi...
                   </h1>
 
                   <div className="timeline-container">
