@@ -126,10 +126,11 @@
 /* Grid Layout */
 .stats-grid {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-right: 20px;
   padding-left: 20px;
   text-align: center;
+  width: 100%;
 }
 
 /* Stat Item */
@@ -137,7 +138,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1.5rem;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, background 0.3s;
