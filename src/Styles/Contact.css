@@ -5,6 +5,7 @@
 .contactus
 {
   width: 100%;
+  color: #f9f5f1;
 }
 
 /*background image*/
@@ -28,13 +29,11 @@
   padding: 20px;
   border-radius: 10px;
 }
-  /* Card styling */
-  /* Country cards section */
 
 .addr h1 {
   margin-top: 40px;
   font-size: 7vh;
-  color: #191310;
+  color: #f9f5f1;
   text-align: center;
 }
 
