@@ -24,7 +24,7 @@ const Reliabilities = () => {
           x: -300
         },
         {
-          heading: 'All Over GCC & Levant Region',
+          heading: 'Cross-Border Services',
           text: 'We extend our reach beyond the UAE to cover the entire GCC (KSA, Oman, Bahrain, Kuwait, Qatar) and the Levant (Jordan, Iraq, Syria, Lebanon, Egypt), providing seamless cross-border services',
           backgroundColor: '#191310',
           color: '#f9f5f1',
@@ -49,10 +49,9 @@ const Reliabilities = () => {
     if(window.innerWidth <= 1000) {
         return (
             <section id="Reliability">
-            {/* Trust and Ensure Section */}
-            <h2 className="reliability-heading">
-            What do we ensure?
-            </h2>
+              <h1 className="reliability-heading">
+                What We Offer 
+              </h1>
 
             <div className="trust-ensure" style={{ overflow: 'hidden' }}>
             {
@@ -81,10 +80,9 @@ const Reliabilities = () => {
     else {
         return (
             <section id="Reliability">
-            {/* Trust and Ensure Section */}
-            <h2 className="reliability-heading">
-            What do we ensure?
-            </h2>
+              <h1 className="reliability-heading">
+                What We Offer 
+              </h1>
 
             <div className="trust-ensure" style={{ overflow: 'hidden' }}>
             {
