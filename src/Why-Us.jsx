@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink as Link } from 'react-router-hash-link';
+import { motion } from "framer-motion";
 import "./Styles/WhyUs.css";
 
 const WhyUs = () => {
@@ -24,99 +24,93 @@ const WhyUs = () => {
 
   const reliabilities = [
     {
-      heading: 'Consistency',
-      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius animi, laudantium nemo adipisci fugiat, placeat ducimus aspernatur enim recusandae perspiciatis nesciunt sint praesentium sunt. Beatae fugit quis animi facere in!'
+      heading: 'Insurance Coverage',
+      text: 'We provide Hauliers Insurance Liability coverage of up to AED 1,000,000 per truck, guaranteeing a high level of protection for your cargo throughout its journey.',
+      backgroundColor: '#f9f5f1',
+      color: '#191310',
+      x: -300
     },
     {
-      heading: 'Delivery Time',
-      text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius animi, laudantium nemo adipisci fugiat, placeat ducimus aspernatur enim recusandae perspiciatis nesciunt sint praesentium sunt. Beatae fugit quis animi facere in!'
-    }
-  ];
-
-  const achievements = [
-    {
-      heading: 'Achievement 1',
-      description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius animi, laudantium nemo adipisci fugiat, placeat ducimus aspernatur enim recusandae perspiciatis nesciunt sint praesentium sunt. Beatae fugit quis animi facere in!',
-      img: '../images/gray-screen-img.png',
+      heading: 'Track & Trace (GPS)',
+      text: 'All our trucks are GPS-enabled, allowing real-time tracking and timely updates from our back-office team to ensure complete visibility of your cargo’s progress.',
+      backgroundColor: '#191310',
+      color: '#f9f5f1',
+      x: 300
     },
     {
-      heading: 'Achievement 2',
-      description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius animi, laudantium nemo adipisci fugiat, placeat ducimus aspernatur enim recusandae perspiciatis nesciunt sint praesentium sunt. Beatae fugit quis animi facere in!',
-      img: '../images/gray-screen-img.png',
+      heading: 'Tailored Solutions',
+      text: '“One size doesn’t fit all,” which is why we analyze your specific data to create custom logistics solutions that align perfectly with your operational needs.',
+      backgroundColor: '#f9f5f1',
+      color: '#191310',
+      x: -300
     },
     {
-      heading: 'Acheivement 3',
-      description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius animi, laudantium nemo adipisci fugiat, placeat ducimus aspernatur enim recusandae perspiciatis nesciunt sint praesentium sunt. Beatae fugit quis animi facere in!',
-      img: '../images/gray-screen-img.png',
+      heading: 'All Over GCC & Levant Region',
+      text: 'We extend our reach beyond the UAE to cover the entire GCC (KSA, Oman, Bahrain, Kuwait, Qatar) and the Levant (Jordan, Iraq, Syria, Lebanon, Egypt), providing seamless cross-border services',
+      backgroundColor: '#191310',
+      color: '#f9f5f1',
+      x: 300
+    },
+    {
+      heading: 'Cost-Effective Operations',
+      text: 'Our team offers multiple shipping and logistics options designed to balance both quality and budget, ensuring that your business objectives are met in the most efficient way possible.',
+      backgroundColor: '#f9f5f1',
+      color: '#191310',
+      x: -300
+    },
+    {
+      heading: 'Dedicated Account Executives',
+      text: 'Each client is assigned a dedicated account executive who oversees every aspect of your shipments, ensuring personalized service and smooth coordination at all stages.',
+      backgroundColor: '#191310',
+      color: '#f9f5f1',
+      x: 300
     }
   ];
 
   return (
     <>
       <section id="why-us" >
-        <div className="why-us-heading-and-bkg-img">
-          <h1>Why Us?</h1>
-
-          <div className="icons">
-            { 
-              icons.map((icon, index) => (
-                <div className="icon-card" key={ index }>
-                  <Link to={ icon.link } className="icons-navlink">
-                    <img src={ icon.img }
-                      alt={ icon.name } 
-                      style={{height: icon.height, width: icon.width}} 
-                      className="rounded-image" />
-
-                    <p className="icon-text">{ icon.name }</p>
-                  </Link>
-                </div>
-              ))
-            }
-          </div>
+        <div className="why-us-heading-and-bkg-img" style={{ overflow: 'hidden' }}>
+          <motion.h1 
+            variants={{
+              hidden: { opacity: 0, y: 300 },
+              visible: { opacity: 1, y: -50 }
+            }}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            Why Us?
+          </motion.h1>
         </div>
 
         <section id="Reliability">
         {/* Trust and Ensure Section */}
-        <h2 className="reliability-heading">What do we ensure?</h2>
-        <div className="trust-ensure">
+        <h2 className="reliability-heading">
+          What do we ensure?
+        </h2>
+
+        <div className="trust-ensure" style={{ overflow: 'hidden' }}>
           {
             reliabilities.map((reliability, index) => (
-              <div className="trust-card" key={ index }>
+              <motion.div className="trust-card" key={ index } 
+                style={{ backgroundColor: reliability.backgroundColor, color: reliability.color }}
+                variants={{
+                  hidden: { opacity: 0, x: reliability.x },
+                  visible: { opacity: 1, x: 0 }
+                }}
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.25 }}
+              >
                 <h2>{ reliability.heading }</h2>
                 <p>{ reliability.text }</p>
-              </div>
+              </motion.div>
             ))
           }
         </div>
-        </section>
-
-        <section id="Achievements">
-        {/* Achievements Section */}
-          <h1 className="achievements-heading">So Far, So Much ...</h1>
-          <div className="achievements">
-            {
-              achievements.map((achievement, index) => (
-                <div className="achievement-card" key={ index }>
-                  <img src={ achievement.img } />
-
-                  <div className="achievement-text">
-                    <h2>{ achievement.heading }</h2>
-                    <p>
-                      { achievement.description }
-                    </p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </section>
-
-        <section id="future">
-        {/* Future Goals Section */}
-          <div className="future-goals">
-            <h2>Future Goals:</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-          </div>
         </section>
       </section>
     </>

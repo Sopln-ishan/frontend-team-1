@@ -1,8 +1,17 @@
 import { HashLink as Link } from 'react-router-hash-link';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {   
     return (
-        <>
+        <motion.section 
+            variants={{
+                hidden: { y: -100 },
+                visible: { y: 0 }
+            }}
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.5 }}
+        >
             <h1 className='logo'>Logo</h1>
             <div className='dropdown-nav-bar' style={{ display: 'none' }}>
                 <div className='dropdown-button'>
@@ -29,12 +38,6 @@ const Navbar = () => {
                 </div>
 
                 <div className="navlink">
-                <Link to="/Home.jsx/#our-services">
-                    Our Services 
-                </Link>
-                </div>
-
-                <div className="navlink">
                 <Link to="/Contact.jsx">
                     Contact Us 
                 </Link>   
@@ -55,15 +58,11 @@ const Navbar = () => {
                     Why Us 
                 </Link>
 
-                <Link to="/#our-services">
-                    Our Services 
-                </Link>
-
                 <Link to="/Contact.jsx">
                     Contact Us 
                 </Link>
             </div>
-        </>
+        </motion.section>
     );
 }
  
