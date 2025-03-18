@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './Styles/Contact.css';
 
 const CountryCard = ({ country }) => {
   return (
-    <div 
+    <motion.div 
       className="country-card" 
       style={{ 
         backgroundImage: `linear-gradient(rgba(25, 19, 16, 0.83), rgba(255, 255, 255, 0.7)), url(${country.image2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
+      variants={{
+        hidden: { opacity: 0, height: 300 },
+        visible: { opacity: 1, height: 205 },
+        hover: { opacity: 1, height: 250 }
+      }}
+      initial='hidden'
+      whileInView='visible'
+      whileHover='hover'
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.25 }}
     >
       {/* <h4 className="country-name">{country.name}</h4> */}
       <div className="extraimg">  
@@ -17,7 +28,7 @@ const CountryCard = ({ country }) => {
         {/* <img src={country.image1} alt={`${country.name} Image`} className="country-image" /> */}
       </div>
       <p className="country-description">{country.description}</p>
-    </div>
+    </motion.div>
   );
 };
 
@@ -142,13 +153,24 @@ const Contact = () => {
       <div className="contact-us-page">
         <div className="contactus">
           <div className="background-container">
-            <div className="text-overlay">
-              <h1>CONTACT US</h1>
+            <div className="text-overlay" style={{ overflow: 'hidden' }}>
+              <motion.h1 
+                variants={{
+                  hidden: { opacity: 0, y: 300 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                initial='hidden'
+                animate='visible'
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                CONTACT US
+              </motion.h1>
             </div>
           </div>
         </div>
         <section className="addr">
-          <h1>Our Headquarters</h1>
+          <h1>Where Are We</h1>
           <div className="country-grid">
             {countryList.map((country, index) => (
               <CountryCard key={index} country={country} />
