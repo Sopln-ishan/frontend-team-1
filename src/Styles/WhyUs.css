@@ -94,45 +94,8 @@
   font-size: 25px;
   line-height: 60px;
 }
+
+@media screen and (max-width: 1000) {
   
-#Achievements {
-  margin-top: 80px;
-}
-
-.achievements-heading {
-  font-size: 33px;
-  text-align: center;
-}
-
-.achievements {
-  padding: 40px 80px;
-}
-
-.achievement-card {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px 0px;
-}
-
-.achievement-text {
-  width: 70%;
-  text-align: left;
-  padding: 20px;
-}
-
-.achievement-card img {
-  width: 30%;
-  height: 70%;
-  border-radius: 50px;
-}
-  
-.future-goals {
-  color: #191310;
-  text-align: left;
-  padding: 80px;
-}
-
-.future-goals h2 {
-  font-size: 33px;
 }
   
