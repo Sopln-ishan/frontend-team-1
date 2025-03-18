@@ -67,7 +67,7 @@ const PastClients = () => {
     return (
         <div className='past-clients-section'>
             <FadeInWhenVisible children={
-                <h1 className="client-card-heading">Our Past Clients</h1>
+                <h1 className="client-card-heading">Our Clients</h1>
             } transition={ 0.5 } />
 
             <FadeInWhenVisible children={

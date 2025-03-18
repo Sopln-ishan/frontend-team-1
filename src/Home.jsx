@@ -10,6 +10,7 @@ import ProjectCargoForm from './Services/ProjectCargoForm';
 import ShippingDocumentsForm from './Services/ShippingDocumentsForm';
 import OurGuarantees from './Guarantees';
 import PastClients from './PastClients';
+import ReviewsSection from './ReviewsSection';
 
 const Home = () => {
     const ref = useRef(null);
@@ -87,6 +88,7 @@ const Home = () => {
 
             <OurGuarantees />
             <PastClients />
+            <ReviewsSection />
         </div>
     );
 };

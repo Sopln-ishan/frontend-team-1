@@ -1,0 +1,83 @@
+.horizontal-scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+  }
+  
+  .reviews-scroll-container {
+    display: flex;
+    gap: 24px;
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+  }
+  
+  .reviews-scroll-container:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* This needs to be calculated based on the total width of all cards plus gap */
+      transform: translateX(calc(-100% - 24px));
+    }
+  }
+  
+  .review-card {
+    min-width: 300px;
+    max-width: 300px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .quote-mark {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 64px;
+    color: rgba(0, 0, 0, 0.08);
+    font-family: serif;
+  }
+  
+  .review-text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .reviewer-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .reviewer-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .reviewer-info p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #666;
+  }
+  .horizontal-scroll-wrapper h1{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
