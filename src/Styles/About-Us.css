@@ -297,6 +297,10 @@
       font-size: 40px;
   }
 
+  .vision-section p, .mission-section p {
+    font-size: 20px;
+  }
+
   .about-company-section {
     width: 80%;
   }
@@ -305,8 +309,8 @@
     font-size: 40px;
   }
 
-  .about-company-text {
-    font-size: 30px;
+  .about-company-text p {
+    font-size: 20px;
   }
 
   .stats-container {
@@ -349,6 +353,6 @@
   }
 
   .mission-section p, .vision-section p {
-    line-height: 55px;
+    line-height: 45px;
   }
 }
