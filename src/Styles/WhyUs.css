@@ -25,40 +25,6 @@
   color: #f9f5f1;
 }
 
-.icons {
-  justify-content: center; /* Centers horizontally */
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 200px;
-  padding: 3cm;
-  margin-bottom: 40px;
-}
-
-.icon-card {
-  text-align: centre;
-  padding: 10px;
-}
-
-.icon-card:hover .icon-text, .icon-card:hover .rounded-image {
-  color: #ffb870;
-}
-
-.icons-navlink {
-  text-decoration: none;
-}
-
-.rounded-image {
-  border-radius: 100px;
-}
-
-.icon-text{
-  color: #f9f5f1;
-  padding: 10px;
-  font-size: 40px;
-}
-
 #Reliability {
   margin-top: 80px;
 }
@@ -70,7 +36,7 @@
 }
 
 .trust-ensure {
-  padding: 40px 80px;
+  margin: 40px auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -93,9 +59,36 @@
   text-align: justify;
   font-size: 25px;
   line-height: 60px;
+  padding: 10px;
 }
 
-@media screen and (max-width: 1000) {
-  
+@media screen and (max-width: 1000px) {
+  .why-us-heading-and-bkg-img h1 {
+    font-size: 80px;
+  }
+
+  .trust-ensure {
+    margin: 40px auto;
+  }
+
+  .trust-card {
+    width: 85%;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .why-us-heading-and-bkg-img h1 {
+    font-size: 60px;
+  }
+
+  .trust-card h2 {
+    font-size: 30px;
+  }
+
+  .trust-card p {
+    font-size: 20px;
+  }
 }
   

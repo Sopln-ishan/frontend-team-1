@@ -1,5 +1,5 @@
 .contact-us-page {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .contactus
@@ -15,7 +15,7 @@
   width: 100%; 
   text-align: center;
   color: #191310;
-  height: 70vh;
+  height: 100vh;
   background-image: url('../../images/world-map.png');
   background-size: cover;
   background-position: center;
@@ -38,21 +38,20 @@
 }
 
 .country-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* gap: 70px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   max-width: 1200px;
-  margin: 8vh 20vh;
+  margin: 8vh auto;
   padding: 0 20px;
   row-gap: 10vh;
-  column-gap: 10vh;
+  column-gap: 4%;
 }
 
 .country-card {
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 40%;
   padding: 25px;
-  /* transition: transform 0.1s ease, box-shadow 0.1s ease; */
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -65,7 +64,7 @@
 
 .country-name {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -87,11 +86,13 @@
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: center;
+  font-size: 30px;
 }
 
 .query
 {
-  background: url('../../images/raise-a-query2.png');
+  /* background: url('../../images/raise-a-query2.png'); */
+  color: #f9f5f1;
   background-repeat: no-repeat;
 }
 .form-container {
@@ -99,10 +100,10 @@
   margin: 100px auto 0px auto;
   padding: 20px 10%;
   border-radius: 8px;
-  box-shadow: 20px 20px 20px #4747478c;
+  box-shadow: 0px 0px 10px #ffb870;
 
   text-align: center;
-  background: #FFE0C2;
+  background: #221a16;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
@@ -122,6 +123,7 @@ input, textarea, select {
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
+  background-color: #cacaca;
   border-radius: 4px;
 }
 
@@ -157,5 +159,33 @@ button:hover {
   color: green;
   font-size: 18px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .text-overlay h1 {
+    font-size: 80px;
+  }
+
+  .addr h1 {
+    font-size: 40px;
+  }
+
+  .country-name {
+    font-size: 30px;
+  }
+
+  .country-description {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .text-overlay h1 {
+    font-size: 60px;
+  }
+  
+  .country-card {
+    width: 80%;
+  }
 }
         
