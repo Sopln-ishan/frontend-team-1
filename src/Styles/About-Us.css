@@ -42,19 +42,19 @@
 .vision-mission-section {
   width: 90%;
   color: #191310;
-  padding: 10px 2%;
+  padding: 10px 0;
   margin: 5px auto;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mission-section {
   text-align: justify;
-  padding: 40px 20px;
+  padding: 20px 20px;
   background-color: #f9f5f1;
-  width: 50%;
+  width: 85%;
   display: inline-block;
-  max-width: 600px;
   border-radius: 10px;
   margin-left: 5px;
 }
@@ -63,28 +63,27 @@
   text-align: right;
   padding: 40px 20px;
   color: #f9f5f1;
-  width: 50%;
+  width: 85%;
   display: inline-block;
-  max-width: 600px;
   border-radius: 10px;
   margin-right: 5px;
 }
 
 .mission-section h2, .vision-section h2 {
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .mission-section p {
   color: #191310;
   font-size: 30px;
-  line-height: 70px;
+  line-height: 45px;
 }
 
 .vision-section p {
   color: #f9f5f1;
   font-size: 30px;
-  line-height: 70px;
+  line-height: 45px;
   text-align: justify;
 }
 
@@ -108,29 +107,30 @@
   padding: 40px 0;
   width: 80vw;
   text-align: justify;
-  line-height: 50px;
+  line-height: 45px;
   font-weight: lighter;
 }
 
 /* Main container */
 .stats-container {
-  background: #ffb870;
+  background: #ffa64c;
   padding: 3rem 1rem;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 30px 80px 30px;
+  margin: 30px auto 80px auto;
+  width: 60vw;
 }
 
 /* Grid Layout */
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
+  width: 100%;
 }
 
 /* Stat Item */
@@ -138,9 +138,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, background 0.3s;
 }
@@ -154,7 +153,7 @@
 /* Stat Value */
 .stat-value {
   font-size: 3rem;
-  font-weight: lighter;
+  font-weight: normal;
   color: #f9f5f1;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -176,7 +175,7 @@
 .timeline-section h1 {
   text-align: center;
   color: #f9f5f1;
-  font-size: 60px;
+  font-size: 50px;
   margin: 40px 0px;
   padding: 40px 0px 20px 0px;
 }
@@ -289,12 +288,12 @@
   }
 
   .vision-section, .mission-section {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
   }
 
   .vision-section h2, .mission-section h2 {
-      font-size: 40px;
+      font-size: 50px;
   }
 
   .vision-section p, .mission-section p {
@@ -350,6 +349,10 @@
     display: grid;
     grid-template-columns: 100%;
     column-gap: 0px;
+  }
+
+  .mission-section, .vision-section {
+    padding: 10px;
   }
 
   .mission-section p, .vision-section p {

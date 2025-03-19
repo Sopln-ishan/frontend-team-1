@@ -65,7 +65,7 @@ const AboutUs = () => {
         <>
             <div className="about-us">
                 <div className="about-us-heading-and-bkg-img">
-                  <div className="about-us-text" style={{ position: 'relative', overflow: 'hidden' }}>
+                  <div id="about-us" className="about-us-text" style={{ position: 'relative', overflow: 'hidden' }}>
                     <motion.div className="about-us-heading"
                       variants={{
                         hidden: { opacity: 0, y: 300 },
@@ -151,7 +151,7 @@ const AboutUs = () => {
 
                 <div className="timeline-section">
                   <h1>
-                    Our Glorious Past...
+                    Our Modus Operandi...
                   </h1>
 
                   <div className="timeline-container">

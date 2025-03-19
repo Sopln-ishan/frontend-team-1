@@ -8,8 +8,9 @@ import ImporterExporterForm from './Services/ImporterExporterForm';
 import IntegratedTruckingForm from './Services/IntegratedTruckingForm';
 import ProjectCargoForm from './Services/ProjectCargoForm';
 import ShippingDocumentsForm from './Services/ShippingDocumentsForm';
-import OurGuarantees from './Guarantees';
+import OurIndustry from './Industry';
 import PastClients from './PastClients';
+import ReviewsSection from './ReviewsSection';
 
 const Home = () => {
     const ref = useRef(null);
@@ -85,8 +86,9 @@ const Home = () => {
                 </Router>
             </div>
 
-            <OurGuarantees />
+            <OurIndustry />
             <PastClients />
+            <ReviewsSection />
         </div>
     );
 };

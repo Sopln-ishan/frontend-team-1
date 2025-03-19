@@ -1,18 +1,16 @@
 import { useState } from "react";
-import 'tailwindcss';
 
-export default function BorderClearanceForm() {
+export default function BorderClearancesForm() {
   const [formData, setFormData] = useState({
-    companyName: "",
     contactPerson: "",
     email: "",
-    phone: "",
-    shipmentDetails: "",
-    borderCrossingPoint: "",
-    customsBroker: "",
-    requiredDocuments: "",
-    inspectionRequirements: "",
-    additionalInfo: ""
+    mobile: "",
+    pickupLocation: "",
+    deliveryLocation: "",
+    customsAgency: "",
+    requiredClearances: "",
+    urgencyLevel: "",
+    specialInstructions: "",
   });
 
   const handleChange = (e) => {
@@ -25,101 +23,45 @@ export default function BorderClearanceForm() {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-center text-xl font-semibold text-gray-800 mb-4">Border Clearance Service</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          type="text"
-          name="companyName"
-          placeholder="Company Name"
-          value={formData.companyName}
-          onChange={handleChange}
-          required
-          className="w-full p-2 border rounded" />
-        
-        <input
-          type="text"
-          name="contactPerson"
-          placeholder="Contact Person"
-          value={formData.contactPerson}
-          onChange={handleChange}
-          required
-          className="w-full p-2 border rounded" />
+    <div className="border-clearance-container">
+      {/* Image & Title Section */}
+      <div className="border-clearance-header">
+        <img src="/border-clearance.jpg" alt="Border Clearance" className="border-clearance-image" />
+        <h2 className="border-clearance-title">Border Clearances</h2>
+        <p className="border-clearance-description">
+          Our border clearance solutions simplify the complexities of cross-border logistics by efficiently managing inspections and documentation.
+          We work diligently to expedite clearance, reducing delays and ensuring timely delivery.
+        </p>
+      </div>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="w-full p-2 border rounded" />
-        
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-          className="w-full p-2 border rounded" />
-        
-        <textarea 
-          name="shipmentDetails"
-          placeholder="Shipment Details"
-          value={formData.shipmentDetails}
-          onChange={handleChange}
-          required
-          className="w-full p-2 border rounded">
-        </textarea>
+      {/* Form Section */}
+      <form onSubmit={handleSubmit} className="border-clearance-form">
+        {/* Client Information */}
+        <fieldset className="form-section">
+          <legend className="form-section-title">Client Information</legend>
+          <input type="text" name="contactPerson" placeholder="Contact Person" value={formData.contactPerson} onChange={handleChange} required className="input-field" />
+          <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="input-field" />
+          <input type="tel" name="mobile" placeholder="Mobile Number" value={formData.mobile} onChange={handleChange} required className="input-field" />
+        </fieldset>
 
-        <input
-          type="text" 
-          name="borderCrossingPoint" 
-          placeholder="Border Crossing Point" 
-          value={formData.borderCrossingPoint} 
-          onChange={handleChange} 
-          required 
-          className="w-full p-2 border rounded" />
-        
-        <input
-          type="text" 
-          name="customsBroker" 
-          placeholder="Customs Broker (if any)" 
-          value={formData.customsBroker} 
-          onChange={handleChange} 
-          className="w-full p-2 border rounded" />
-        
-        <input
-          type="text" 
-          name="requiredDocuments" 
-          placeholder="Required Documents" 
-          value={formData.requiredDocuments} 
-          onChange={handleChange} 
-          required 
-          className="w-full p-2 border rounded" />
-        
-        <textarea 
-          name="inspectionRequirements" 
-          placeholder="Inspection Requirements" 
-          value={formData.inspectionRequirements} 
-          onChange={handleChange} 
-          className="w-full p-2 border rounded">
-        </textarea>
+        {/* Service-Related Information */}
+        <fieldset className="form-section">
+          <legend className="form-section-title">Service Details</legend>
+          <input type="text" name="pickupLocation" placeholder="Pickup Location" value={formData.pickupLocation} onChange={handleChange} required className="input-field" />
+          <input type="text" name="deliveryLocation" placeholder="Delivery Location" value={formData.deliveryLocation} onChange={handleChange} required className="input-field" />
+          <input type="text" name="customsAgency" placeholder="Customs Agency (if applicable)" value={formData.customsAgency} onChange={handleChange} className="input-field" />
+          <input type="text" name="requiredClearances" placeholder="Required Clearances (e.g., Import, Export, Health & Safety)" value={formData.requiredClearances} onChange={handleChange} required className="input-field" />
+          <select name="urgencyLevel" value={formData.urgencyLevel} onChange={handleChange} required className="input-field">
+            <option value="">Urgency Level</option>
+            <option value="Standard">Standard</option>
+            <option value="Expedited">Expedited</option>
+            <option value="Urgent">Urgent</option>
+          </select>
+          <textarea name="specialInstructions" placeholder="Special Instructions (if any)" value={formData.specialInstructions} onChange={handleChange} className="textarea-field"></textarea>
+        </fieldset>
 
-        <textarea 
-          name="additionalInfo" 
-          placeholder="Additional Instructions" 
-          value={formData.additionalInfo} 
-          onChange={handleChange} 
-          className="w-full p-2 border rounded">
-        </textarea>
-
-        <button 
-          type="submit" 
-          className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
-            Submit Request
-        </button>
+        {/* Submit Button */}
+        <button type="submit" className="submit-button">Submit Request</button>
       </form>
     </div>
   );

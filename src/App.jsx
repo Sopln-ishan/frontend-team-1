@@ -9,7 +9,12 @@ import AboutUs from './About-Us';
 import ContactUs from './Contact';
 import Footer from './Footer';
 import WhyUs from './Why-Us';
-
+import BondedMovementsForm from './Services/BondedMovementsForm';
+import BorderClearancesForm from './Services/BorderClearancesForm';
+import ImporterExporterForm from './Services/ImporterExporterForm';
+import IntegratedTruckingForm from './Services/IntegratedTruckingForm';
+import ProjectCargoForm from './Services/ProjectCargoForm';
+import ShippingDocumentsForm from './Services/ShippingDocumentsForm';
 
 function App() {
   useEffect(() => {
@@ -25,6 +30,24 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/BondedMovements">
+            <BondedMovementsForm />
+          </Route>
+          <Route exact path="/BorderClearances">
+            <BorderClearancesForm />
+          </Route>
+          <Route exact path="/ImporterExporter">
+            <ImporterExporterForm />
+          </Route>
+          <Route exact path="/IntegratedTrucking">
+            <IntegratedTruckingForm />
+          </Route>
+          <Route exact path="/ProjectCargo">
+            <ProjectCargoForm />
+          </Route>
+          <Route exact path="/ShippingDocuments">
+            <ShippingDocumentsForm />
           </Route>
 
           <Route path="/About-Us.jsx">

@@ -35,10 +35,10 @@ const PastClients = () => {
                     // Reset to the beginning without animation
                     container.scrollLeft = 0;
                 } else {
-                    container.scrollLeft += 1;
+                    container.scrollLeft += 15;
                 }
             }
-        }, 20); // Lower = faster scroll
+        }, 15); // Lower = faster scroll
     };
 
     const pauseScroll = () => clearInterval(scrollInterval.current);
@@ -67,7 +67,7 @@ const PastClients = () => {
     return (
         <div className='past-clients-section'>
             <FadeInWhenVisible children={
-                <h1 className="client-card-heading">Our Past Clients</h1>
+                <h1 className="client-card-heading">Our Clients</h1>
             } transition={ 0.5 } />
 
             <FadeInWhenVisible children={

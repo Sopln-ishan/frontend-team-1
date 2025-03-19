@@ -1,5 +1,14 @@
+@font-face {
+    font-family: montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+* {
+    font-family: montserrat;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -43,7 +52,7 @@ h1, h2, h3, h4, h5, p {
 
 @media screen and (max-width: 1200px) {
     .company-text-and-img h1 {
-        font-size: 80px;
+        font-size: 95px;
     }
 
     .company-text-and-img p {

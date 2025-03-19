@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-export default function TruckingSolutionForms() {
+export default function IntegratedTruckingForm() {
   const [formData, setFormData] = useState({
-    companyName: "",
     contactPerson: "",
     email: "",
-    phone: "",
+    mobileNumber: "",
+    countryCode: "",
     pickupLocation: "",
     deliveryLocation: "",
     cargoType: "",
@@ -25,33 +25,55 @@ export default function TruckingSolutionForms() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold text-center mb-4">Integrated Trucking Solution</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input type="text" name="companyName" placeholder="Company Name" value={formData.companyName} onChange={handleChange} required className="w-full p-2 border rounded" />
-        <input type="text" name="contactPerson" placeholder="Contact Person" value={formData.contactPerson} onChange={handleChange} required className="w-full p-2 border rounded" />
-        <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="w-full p-2 border rounded" />
-        <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required className="w-full p-2 border rounded" />
-        
-        <h3 className="text-lg font-semibold">Pickup & Delivery Details</h3>
-        <input type="text" name="pickupLocation" placeholder="Pickup Location" value={formData.pickupLocation} onChange={handleChange} required className="w-full p-2 border rounded" />
-        <input type="text" name="deliveryLocation" placeholder="Delivery Location" value={formData.deliveryLocation} onChange={handleChange} required className="w-full p-2 border rounded" />
-        
-        <h3 className="text-lg font-semibold">Cargo & Trucking Details</h3>
-        <input type="text" name="cargoType" placeholder="Cargo Type (e.g., perishable, fragile)" value={formData.cargoType} onChange={handleChange} required className="w-full p-2 border rounded" />
-        <input type="number" name="cargoWeight" placeholder="Cargo Weight (in kg)" value={formData.cargoWeight} onChange={handleChange} required className="w-full p-2 border rounded" />
-        <select name="truckType" value={formData.truckType} onChange={handleChange} required className="w-full p-2 border rounded">
-          <option value="">Select Truck Type</option>
-          <option value="Flatbed">Flatbed</option>
-          <option value="Refrigerated">Refrigerated</option>
-          <option value="Containerized">Containerized</option>
-          <option value="Tanker">Tanker</option>
-        </select>
-        <input type="date" name="deliveryDate" value={formData.deliveryDate} onChange={handleChange} required className="w-full p-2 border rounded" />
-        
-        <textarea name="specialInstructions" placeholder="Special Instructions (if any)" value={formData.specialInstructions} onChange={handleChange} className="w-full p-2 border rounded min-h-[80px]"></textarea>
-        
-        <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Submit Request</button>
+    <div className="trucking-container">
+      {/* Image & Title Section */}
+      <div className="trucking-header">
+        <img src="/trucking-image.jpg" alt="Trucking Service" className="trucking-image" />
+        <h2 className="trucking-title">Integrated Trucking Solution</h2>
+        <p className="trucking-description">
+          Experience seamless transportation with optimized fleet management and secure delivery schedules.
+        </p>
+      </div>
+
+      {/* Form Section */}
+      <form onSubmit={handleSubmit} className="trucking-form">
+        {/* Client Information */}
+        <fieldset className="form-section">
+          <legend className="form-section-title">Client Information</legend>
+          <input type="text" name="contactPerson" placeholder="Contact Person" value={formData.contactPerson} onChange={handleChange} required className="input-field" />
+          <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="input-field" />
+          <div className="phone-group">
+            <select name="countryCode" value={formData.countryCode} onChange={handleChange} required className="select-field">
+              <option value="">Select Country Code</option>
+              <option value="+1">+1 (USA)</option>
+              <option value="+44">+44 (UK)</option>
+              <option value="+91">+91 (India)</option>
+              <option value="+61">+61 (Australia)</option>
+            </select>
+            <input type="tel" name="mobileNumber" placeholder="Mobile Number" value={formData.mobileNumber} onChange={handleChange} required className="input-field" />
+          </div>
+        </fieldset>
+
+        {/* Service-Related Information */}
+        <fieldset className="form-section">
+          <legend className="form-section-title">Service Details</legend>
+          <input type="text" name="pickupLocation" placeholder="Pickup Location" value={formData.pickupLocation} onChange={handleChange} required className="input-field" />
+          <input type="text" name="deliveryLocation" placeholder="Delivery Location" value={formData.deliveryLocation} onChange={handleChange} required className="input-field" />
+          <input type="text" name="cargoType" placeholder="Cargo Type (e.g., perishable, fragile)" value={formData.cargoType} onChange={handleChange} required className="input-field" />
+          <input type="number" name="cargoWeight" placeholder="Cargo Weight (in kg)" value={formData.cargoWeight} onChange={handleChange} required className="input-field" />
+          <select name="truckType" value={formData.truckType} onChange={handleChange} required className="select-field">
+            <option value="">Select Truck Type</option>
+            <option value="Flatbed">Flatbed</option>
+            <option value="Refrigerated">Refrigerated</option>
+            <option value="Containerized">Containerized</option>
+            <option value="Tanker">Tanker</option>
+          </select>
+          <input type="datetime-local" name="deliveryDate" value={formData.deliveryDate} onChange={handleChange} required className="input-field" />
+          <textarea name="specialInstructions" placeholder="Special Instructions (if any)" value={formData.specialInstructions} onChange={handleChange} className="textarea-field"></textarea>
+        </fieldset>
+
+        {/* Submit Button */}
+        <button type="submit" className="submit-button">Submit Request</button>
       </form>
     </div>
   );
