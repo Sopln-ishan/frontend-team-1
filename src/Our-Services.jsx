@@ -7,37 +7,37 @@ const OurServices = () => {
   const linkCards = [
     {
       title: 'Bonded Movements',
-      src: '/Services/BondedMovementsForm.jsx',
+      src: '/BondedMovements',
       icon: '../images/warehouse.png',
       id: 1
     },
     {
       title: 'Border Clearances',
-      src: '/Services/BorderClearancesForm.jsx',
+      src: '/BorderClearances',
       icon: '../images/truck.png',
       id: 2
     },
     {
       title: 'Importer Exporter',
-      src: '/Services/ImportExporterForm.jsx',
+      src: '/ImporterExporter',
       icon: '../images/worldwide.png',
       id: 3
     },
     {
       title: 'Integrated Trucking',
-      src: '/Services/IntegratedTruckingForm.jsx',
+      src: '/IntegratedTrucking',
       icon: '../images/delivery-truck.png',
       id: 4
     },
     {
       title: 'Project Cargo',
-      src: '/Services/ProjectCargoForm.jsx',
+      src: '/ProjectCargo',
       icon: '../images/delivery-box.png',
       id: 5
     },
     {
       title: 'Shipping Documents',
-      src: '/Services/ShippingDocumentsForm.jsx',
+      src: '/ShippingDocuments',
       icon: '../images/plan.png',
       id: 6
     }
